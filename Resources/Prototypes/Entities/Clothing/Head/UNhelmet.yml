@@ -1,0 +1,18 @@
+#UN helmet
+- type: entity
+  parent: [ ClothingHeadHelmetBase, BaseRestrictedContraband ]
+  id: ClothingHeadHelmetUN
+  name: United Nation helmet
+  description: The UN helmet is an organizational helmet that is intended for peacekeeping purposes only. I hope only in peacekeeping...
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/UN_helmet.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/UN_helmet.rsi
+    - type: IngestionBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
