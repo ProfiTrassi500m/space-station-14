@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]
+  id: ClothingBeltUNWebbing
+  name: United Nation webbing
+  description: Ideal for storing everything from ammo to weapons and combat essentials.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/unwebbing.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/unwebbing.rsi
