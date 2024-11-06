@@ -1,0 +1,17 @@
+- type: entity
+  parent: [ ClothingHeadBase, BaseRestrictedContraband ]
+  id: ClothingHeadHatARSTSoldier
+  name: Arstotzki soldier's cap
+  description: Comrade! If you wear this, you are definitely a servant in the name of the great Arstotzka! Glory to Arstotzka!
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/ARST_HatSoldier.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/ARST_HatSoldier.rsi
+      - type: IngestionBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.03
+        Slash: 0.03
+        Piercing: 0.03
