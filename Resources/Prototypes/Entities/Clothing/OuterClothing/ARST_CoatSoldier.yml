@@ -5,6 +5,6 @@
   description: Comrade! Don't lose your gear! Your coat is your main attribute! Read what's on the label! This coat is equipped with armor plates (No lol bro)! Glory to Arstotzka!
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/ARST_CoatSoldier.rsi
+    sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldier.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/ARST_CoatSoldier.rsi
+    sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldier.rsi
