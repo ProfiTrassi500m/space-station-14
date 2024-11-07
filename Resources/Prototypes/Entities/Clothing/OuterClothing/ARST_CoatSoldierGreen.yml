@@ -8,12 +8,3 @@
     sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldierGreen.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldierGreen.rsi
-      - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.6 
-        Slash: 0.6
-        Piercing: 0.3
-        Heat: 0.9
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
