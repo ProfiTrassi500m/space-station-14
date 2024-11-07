@@ -1,13 +1,13 @@
 - type: entity
   parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseRestrictedContraband]
-  id: ARSTClothingOuterCoatSoldier
-  name: Arstotzki soldier's coat
+  id: ARSTClothingOuterCoatSoldierGreen
+  name: Arstotzki soldier's green coat 
   description: Comrade! Don't lose your gear! Your coat is your main attribute! Read what's on the label! This coat is equipped with armor plates (No lol bro)! Glory to Arstotzka!
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldier.rsi
+    sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldierGreen.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldier.rsi
+    sprite: Clothing/OuterClothing/Vests/ARST_CoatSoldierGreen.rsi
       - type: Armor
     modifiers:
       coefficients:
