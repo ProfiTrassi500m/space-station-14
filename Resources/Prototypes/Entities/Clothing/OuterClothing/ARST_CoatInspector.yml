@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseRestrictedContraband]
+  id: ARSTClothingOuterCoatInspector
+  name: Arstotzki inspector's coat
+  description: he is clearly watching you and your statements....
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/ARST_CoatInspector.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/ARST_CoatInspector.rsi
