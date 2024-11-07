@@ -1,6 +1,6 @@
 - type: entity
   parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseRestrictedContraband]
-  id: ClothingOuterCoatARSTSoldier
+  id: ARSTClothingOuterCoatARSTSoldier
   name: Arstotzki soldier's coat
   description: Comrade! Don't lose your gear! Your coat is your main attribute! Read what's on the label! This coat is equipped with armor plates (No lol bro)! Glory to Arstotzka!
   components:

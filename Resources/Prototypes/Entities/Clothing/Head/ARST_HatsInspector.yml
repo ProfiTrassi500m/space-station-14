@@ -1,6 +1,6 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseRestrictedContraband ]
-  id: ClothingHeadHatARSTInspector
+  id: ARSTClothingHeadHatARSTInspector
   name: Arstotzki inspector's cap
   description: Comrade! Whoever wears this is clearly testing you. We do not advise you to go near them and be afraid of them! God forbid you be mistaken for a deserter! Glory to Arstotzka!
   components:

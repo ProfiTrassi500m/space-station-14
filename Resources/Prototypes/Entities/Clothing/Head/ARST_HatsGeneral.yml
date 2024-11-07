@@ -1,6 +1,6 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseRestrictedContraband ]
-  id: ClothingHeadHatARSTGeneral
+  id: ARSTClothingHeadHatARSTGeneral
   name: Arstotzki general's cap
   description: Comrade! It's the general! Obey him, otherwise he will punish you! Long live Arstotzka, glory to Arstotzka!
   components:

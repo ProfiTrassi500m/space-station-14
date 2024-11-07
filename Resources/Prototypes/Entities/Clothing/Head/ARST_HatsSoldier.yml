@@ -1,6 +1,6 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseRestrictedContraband ]
-  id: ClothingHeadHatARSTSoldier
+  id: ARSTClothingHeadHatARSTSoldier
   name: Arstotzki soldier's cap
   description: Comrade! If you wear this, you are definitely a servant in the name of the great Arstotzka! Glory to Arstotzka!
   components:
