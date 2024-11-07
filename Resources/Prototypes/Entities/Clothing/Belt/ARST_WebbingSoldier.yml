@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]
+  id: ARSTClothingBeltSoldierWebbing
+  name: Arstozki soldier webbing
+  description: The combat belt is equipped with pouches for cartridges and first aid kits, which is a good help for the global revolution at the station and the establishment of a dictatorship. And yes, glory to Arstotzka!
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/ARST_WebbingSoldier.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/ARST_WebbingSoldier.rsi
