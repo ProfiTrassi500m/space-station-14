@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ARSTClothingNeckSoldierCloak
+  name: Arstotzki's officer's winter cape
+  description: This cape is made of cheap material, but it is very warm to keep a person warm. She also seems respectable and businesslike. Glory to Arstotzka!
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/ARST_SoldierCloak.rsi
+  - type: Clothing
+    sprite: Clothing/Neck/Cloaks/ARST_SoldierCloak.rsi
