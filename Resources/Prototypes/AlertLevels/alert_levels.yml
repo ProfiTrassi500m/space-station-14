@@ -46,17 +46,6 @@
       color: PaleVioletRed
       emergencyLightColor: PaleVioletRed
       forceEnableEmergencyLights: true
-    dark:
-      announcement: alert-level-dark-announcement
-      selectable: false
-      sound:
-        path: /Audio/Misc/epsilon.ogg
-        params:
-          volume: -1
-      disableSelection: true
-      color: DarkRed
-      emergencyLightColor: Orange
-      forceEnableEmergencyLights: true
     delta:
       announcement: alert-level-delta-announcement
       selectable: false

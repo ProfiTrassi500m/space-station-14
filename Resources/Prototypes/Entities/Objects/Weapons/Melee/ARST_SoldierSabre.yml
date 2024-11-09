@@ -20,7 +20,7 @@
     sprite: Objects/Weapons/Melee/ARST_SoldierSabre.rsi
   - type: Tag
     tags:
-    - CaptainSabre
+    - SoldierSabre
   - type: DisarmMalus
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-inanimate
