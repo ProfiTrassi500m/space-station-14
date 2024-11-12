@@ -1,0 +1,41 @@
+- type: entity
+  name: BaseItchakaWeaponShotgun
+  parent: BaseItem
+  id: BaseItchakaWeaponShotgun
+  description: The Ithaca 37 shotgun is a basic weapon that has been used since the 2000s. Since its release, more than 2 million copies have been produced. At the moment, all goods are in the custody of the NanoTrazen corporation and are used by mercenaries in free sectors to fight against pirates.
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Item
+    size: Large
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/BASEItchaka37_shotgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/BASEItchaka37shotgun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun
+    capacity: 5
+    proto: ShellShotgun
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/BASEItchaka37shotgun_insert.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
