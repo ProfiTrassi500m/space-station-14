@@ -1,30 +1,35 @@
 - type: entity
-  name: Itchaka-37
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
-  id: WeaponShotgunItchaka37
-  description: When an old Remington design meets modern materials, this is the result. A favourite weapon of militia forces throughout many worlds. Uses .50 shotgun shells.
+  name: ARST_Itchaka37
+  parent: BaseItem
+  id: ARSTWeaponShotgunItchaka37
+  description: The Ithaca 37 - repeating shotgun designed by John M. Browning and John Pedersen. The gun rights were sold to a subsidiary of NanoGunTransINC.
+  abstract: true
   components:
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "enum.GunVisualLayers.Base" ]
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,4,0
-    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37_inhands.rsi
+    size: Normal 
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 2
+    fireRate: 3
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-  - type: Gun 
     soundGunshot:
       path: /Audio/Corvax/Weapons/Guns/Gunshots/ARST_Itchaka37_shot.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
-   - type: BallisticAmmoProvider
+  - type: BallisticAmmoProvider
     whitelist:
       tags:
       - ShellShotgun
