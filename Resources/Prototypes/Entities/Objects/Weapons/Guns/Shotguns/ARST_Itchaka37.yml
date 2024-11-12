@@ -1,45 +1,24 @@
 - type: entity
-  name: ARST_Itchaka37
-  parent: BaseItem
-  id: ARSTWeaponShotgunItchaka37
+  name: Itchaka Model 37
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseMinorContraband]
+  id: WeaponShotgunItchaka37
   description: The Ithaca 37 - repeating shotgun designed by John M. Browning and John Pedersen. The gun rights were sold to a subsidiary of NanoGunTransINC.
-  abstract: true
   components:
   - type: Sprite
-    layers:
-    - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
-  - type: Item
-    size: Normal 
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37.rsi
+    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShotgunItchaka37.rsi
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37.rsi
-    quickEquip: false
-    slots:
-    - Back
-    - suitStorage
-  - type: AmmoCounter
+    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShotgunItchaka37.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShotgunItchaka37_inhands_64x.rsi
+  - type: GunRequiresWield 
   - type: Gun
-    fireRate: 3
-    selectedMode: SemiAuto
-    availableModes:
-    - SemiAuto
-    soundGunshot:
-      path: /Audio/Corvax/Weapons/Guns/Gunshots/ARST_Itchaka37_shot.ogg
-    soundEmpty:
-      path: /Audio/Weapons/Guns/Empty/empty.ogg
+    fireRate: 2
   - type: BallisticAmmoProvider
-    whitelist:
-      tags:
-      - ShellShotgun
     capacity: 5
-    proto: ShellShotgun
-    soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/ARST_Itchaka37_insert.ogg
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-        ents: []
-  - type: StaticPrice
-    price: 250
+  - type: Construction
+    graph: ShotgunSawn
+    node: start
+    deconstructionTarget: null
