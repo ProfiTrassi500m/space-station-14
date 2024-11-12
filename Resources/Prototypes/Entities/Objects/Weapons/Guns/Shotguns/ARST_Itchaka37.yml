@@ -1,0 +1,40 @@
+- type: entity
+  name: Itchaka-37
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
+  id: WeaponShotgunItchaka37
+  description: When an old Remington design meets modern materials, this is the result. A favourite weapon of militia forces throughout many worlds. Uses .50 shotgun shells.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37_inhands.rsi
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/ARST_ShothunItchaka37.rsi
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: Gun 
+    soundGunshot:
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/ARST_Itchaka37_shot.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+   - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun
+    capacity: 5
+    proto: ShellShotgun
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/ARST_Itchaka37_insert.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: StaticPrice
+    price: 250
