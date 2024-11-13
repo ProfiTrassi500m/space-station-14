@@ -1,0 +1,25 @@
+- type: entity
+  name: AKMS
+  parent: [BaseWeaponAK74Rifle, BaseRestrictedContraband]
+  id: WeaponRifleAK74
+  description: An iconic weapon of war. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Rifles/AK74.rsi
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,4,0
+    sprite: Objects/Weapons/Guns/Shotguns/AK74_rifles_inhands_64x.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 5
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
