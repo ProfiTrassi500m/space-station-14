@@ -20,7 +20,7 @@
   - type: AmmoCounter
   - type: Gun
     fireRate: 3
-    selectedMode: SemiAuto
+    selectedMode: SemiAuto # Ne rabotaet? Poplach yebiche
     availableModes:
     - SemiAuto
     soundGunshot:
@@ -31,7 +31,7 @@
     whitelist:
       tags:
       - ShellShotgun
-    capacity: 5
+    capacity: 5  # Zdes daljno bic 5 patronov, ponyal?
     proto: ShellShotgun
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/BASEItchaka37shotgun_insert.ogg
