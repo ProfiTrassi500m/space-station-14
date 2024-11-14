@@ -1,0 +1,25 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseMagazineBox9x19mm
+  name: 9x19mm ammunition box (9x19mm caliber)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePistol
+    proto: BaseBullet9x19mm
+    capacity: 60
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/9x19mm-pistol.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
