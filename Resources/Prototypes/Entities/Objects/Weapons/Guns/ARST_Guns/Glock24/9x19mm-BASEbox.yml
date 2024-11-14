@@ -8,7 +8,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgePistol
+        - BaseCartridgePistol9x19mm
     proto: BaseBullet9x19mm
     capacity: 60
   - type: Item
@@ -17,7 +17,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/9x19mm-pistol.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/9x19mm-pistol2.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 3
