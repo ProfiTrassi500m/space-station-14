@@ -1,18 +1,20 @@
+################ Creator: profi_trassi_500m (Discord) ################
+##############################################################
 - type: entity
   name: BaseWeaponGun74
   parent: [BaseItem, BaseGunWieldable]
   id: BaseWeaponAK74
-  description: A rooty tooty point and shooty.
+  description: AK74 was invented during the USSR, during which time it was in the hands of communists, terrorists and other evil spirits. If you have it in your hands, you have been listed above.
   abstract: true
   components:
   - type: Item
     size: Normal
     shape:
     - 0,0,4,0
-    sprite: Objects/Weapons/Guns/Shotguns/INHAND64x-AK74.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK47.rsi
     size: Huge
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Rifles/OBJECT-AK74.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK47.rsi
     quickEquip: false
     slots:
     - Back
@@ -24,17 +26,17 @@
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/GUNSHOT-AK74.rsi 
+      path: /Audio/Weapons/Guns/AK74/GUNSHOT-AK74.Ogg
   - type: ChamberMagazineAmmoProvider
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/COCK-AK74.rsi
+      path: /Audio/Weapons/Guns/AK74/COCK-AK74.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazineLightRifle
-        insertSound: /Audio/Weapons/Guns/MagIn/MAGIN-AK74.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/MAGOUT-AK74.ogg
+        insertSound: /Audio/Weapons/Guns/AK74/MAGIN-AK74.ogg
+        ejectSound: /Audio/Weapons/Guns/AK74/MAGOUT-AK74.ogg
         priority: 2
         whitelist:
           tags:
@@ -53,5 +55,58 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
-    #################################################################
-    
+
+##############################################################
+##############################################################
+
+- type: entity
+  name: AK-74
+  parent: [BaseWeaponAK74, BaseRestrictedContraband]
+  id: WeaponRifleAK74
+  description: AK74 was invented during the USSR, during which time it was in the hands of communists, terrorists and other evil spirits. If you have it in your hands, you have been listed above.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK47.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+ - type: GunWieldBonus
+    minAngle: -23
+    maxAngle: -43
+ - type: Gun
+    minAngle: 24
+    maxAngle: 45
+    fireRate: 5
+  - type: ItemSlots
+    slots:
+     gun_magazine:
+       name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/Weapons/Guns/AK74/MAGIN-AK74.ogg
+        ejectSound: /Audio/Weapons/Guns/AK74/MAGOUT-AK74.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+##############################################################
+##############################################################
