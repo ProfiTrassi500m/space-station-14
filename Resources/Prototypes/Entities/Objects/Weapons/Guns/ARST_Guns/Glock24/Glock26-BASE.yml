@@ -1,6 +1,6 @@
 type: entity
   name: Glock model 26
-  parent: BaseItem
+  parent: [BaseItem, BaseRestrictedContraband]
   id: BaseWeaponGlock
   description: Glock.... 26?!!!
   abstract: true
