@@ -7,10 +7,9 @@
   description: AK74 was invented during the USSR, during which time it was in the hands of communists, terrorists and other evil spirits. If you have it in your hands, you have been listed above.
   abstract: true
   components:
+  - type: Sprite
   - type: Item
-    size: Normal
-    shape:
-    - 0,0,4,0
+    size: Huge
     sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK47.rsi
     size: Huge
   - type: Clothing
