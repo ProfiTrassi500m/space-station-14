@@ -35,7 +35,7 @@ type: entity
       path: /Audio/Weapons/Guns/Gunshots/SOUNDSHOT-GLOCK26.ogg
   - type: ChamberMagazineAmmoProvider
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/SOUNDRACK-GLOCK26.ogg
+      path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
