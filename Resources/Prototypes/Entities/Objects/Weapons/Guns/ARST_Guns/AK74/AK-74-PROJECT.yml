@@ -1,0 +1,57 @@
+- type: entity
+  name: BaseWeaponGun74
+  parent: [BaseItem, BaseGunWieldable]
+  id: BaseWeaponAK74
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: Objects/Weapons/Guns/Shotguns/INHAND64x-AK74.rsi
+    size: Huge
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Rifles/OBJECT-AK74.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/GUNSHOT-AK74.rsi 
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/COCK-AK74.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/MAGIN-AK74.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/MAGOUT-AK74.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 500
+    #################################################################
+    
