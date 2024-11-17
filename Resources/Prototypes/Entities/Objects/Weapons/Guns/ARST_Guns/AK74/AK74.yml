@@ -5,7 +5,7 @@
   description: An iconic weapon of war. Uses .30 rifle ammo.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
