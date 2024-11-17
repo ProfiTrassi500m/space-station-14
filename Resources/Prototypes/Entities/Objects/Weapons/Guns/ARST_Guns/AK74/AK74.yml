@@ -1,15 +1,11 @@
 - type: entity
   name: AK-74
-  parent: [BaseAK74WeaponRifle, BaseRestrictedContraband]
-  id: WeaponRifleAk74
-  description: AK74 is the cheapest option for destroying a target...
+  parent: [BaseWeaponRifleAK74, BaseRestrictedContraband]
+  id: WeaponRifleAK74
+  description: An iconic weapon of war. Uses .30 rifle ammo.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74.rsi
-  - type: Item
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74-INHAND_64x.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
