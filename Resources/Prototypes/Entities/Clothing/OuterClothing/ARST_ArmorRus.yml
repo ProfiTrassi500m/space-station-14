@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseRestrictedContraband]
+  id: ClothingOuterArmorRussian
+  name: Russian soldier armor
+  description: Reinforced armor of a Russian fighter, it shows a patch with the tricolor flag of the Russian Federation, which soon joined the USSP corporation.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/ARST_ArmorRus.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/ARST_ArmorRus.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.7
+        Heat: 0.9
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: GroupExamine
