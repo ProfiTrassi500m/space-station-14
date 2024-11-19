@@ -1,11 +1,11 @@
 - type: entity
-  name: AGUN_AK-74
-  parent: [BaseWeaponRifleAK74, BaseRestrictedContraband]
-  id: AGUN_WeaponRifleAK74
+  name: AGUN_AKCYMod-74
+  parent: [AGUN_BaseWeaponRifleAKCYMod74, BaseRestrictedContraband]
+  id: AGUN_WeaponRifleAKCYMod74
   description: An iconic weapon of war. Uses .30 rifle ammo.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE=AK74BIG.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AKCYMod74/SPRITE-AKCY74ModBIG.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]

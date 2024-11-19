@@ -1,18 +1,25 @@
 - type: entity
-  name: AGUN_AK-74
-  parent: [BaseWeaponRifleAK74, BaseRestrictedContraband]
-  id: AGUN_WeaponRifleAK74
-  description: An iconic weapon of war. Uses .30 rifle ammo.
+  name: AGUN_BaseWeaponRifleAKCYMod-74
+  parent: [BaseItem, BaseGunWieldable]
+  id: AGUN_BaseWeaponRifleAKCYMod74
+  description: A rooty tooty point and shooty.
+  abstract: true
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE=AK74BIG.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AKCY74Mod/SPRITE-AKCY74ModTINY.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
   - type: Gun
     fireRate: 7
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/GUNSHOT-AK74.ogg
   - type: ChamberMagazineAmmoProvider
@@ -41,8 +48,5 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
+  - type: StaticPrice
+    price: 500

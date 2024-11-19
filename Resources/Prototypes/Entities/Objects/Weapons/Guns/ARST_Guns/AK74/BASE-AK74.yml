@@ -1,7 +1,7 @@
 - type: entity
-  name: BaseWeaponRifleAK74
+  name: AGUN_BaseWeaponRifleAK74
   parent: [BaseItem, BaseGunWieldable]
-  id: BaseWeaponRifleAK74
+  id: AGUN_BaseWeaponRifleAK74
   description: A rooty tooty point and shooty.
   abstract: true
   components:
@@ -9,14 +9,14 @@
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
     quickEquip: false
     slots:
     - Back
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 5
+    fireRate: 7
     selectedMode: FullAuto
     availableModes:
       - FullAuto
