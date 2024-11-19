@@ -1,6 +1,6 @@
 - type: entity
   name: AGUN_AK-74
-  parent: [BaseWeaponRifleAK74, BaseRestrictedContraband]
+  parent: [AGUN_BaseWeaponRifleAK74, BaseRestrictedContraband]
   id: AGUN_WeaponRifleAK74
   description: An iconic weapon of war. Uses .30 rifle ammo.
   components:
