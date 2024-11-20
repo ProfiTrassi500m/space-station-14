@@ -6,6 +6,10 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74BIG.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
