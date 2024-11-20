@@ -8,6 +8,7 @@
   - type: Sprite
   - type: Item
     size: Huge
+    sptite: Objects/Weapons/Guns/Rifles/SPRITE-AKCY74Mod/SPRITE-AKCY74ModTINY.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/SPRITE-AKCY74Mod/SPRITE-AKCY74ModTINY.rsi
     quickEquip: false
