@@ -9,7 +9,7 @@
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74-SPRITE2_64x
     quickEquip: false
     slots:
     - Back
