@@ -1,27 +1,29 @@
 - type: entity
-  name: AGUN_AK-74
-  parent: [AGUN_BaseWeaponRifleAK74, BaseRestrictedContraband]
+  name: AK74
+  parent: BaseWeaponRifle
   id: AGUN_WeaponRifleAK74
-  description: An iconic weapon of war. Uses .30 rifle ammo.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74BIG.rsi
-  - type: Item
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AKCY74/SPRITE-AKCY74BIG.rsi
+    layers:
+    - state: bases
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AKC4/SPRITE-AK74TINY.rsi
+  - type: GunWieldBonus
+    minAngle: -23
+    maxAngle: -43
   - type: Gun
-    fireRate: 7
+    minAngle: 24
+    maxAngle: 45
+    fireRate: 5
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/GUNSHOT-AK74.ogg
+      collection: ak47
   - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/Weapons/Guns/Cock/COCK-AK74.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -32,15 +34,14 @@
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
-        whitelistFailPopup: gun-magazine-whitelist-fail
+          - MagazineLightRifle
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeLightRifle
+        startingItem: CartridgeLightRifle  
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+          - CartridgeLightRifle  
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -50,3 +51,6 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: Wieldable
+  - type: UseDelay
+    delay: 0.5
