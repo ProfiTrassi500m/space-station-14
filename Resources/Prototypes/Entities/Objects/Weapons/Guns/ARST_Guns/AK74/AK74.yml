@@ -4,7 +4,7 @@
   id: AGUN_WeaponRifleAK74
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AKCY74/SPRITE-AKCY74BIG.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74BIG.rsi
     layers:
     - state: bases
       map: ["enum.GunVisualLayers.Base"]
@@ -13,7 +13,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
   - type: Item
-    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AKC4/SPRITE-AK74TINY.rsi
+    sprite: Objects/Weapons/Guns/Rifles/SPRITE-AK74/SPRITE-AK74TINY.rsi
   - type: GunWieldBonus
     minAngle: -23
     maxAngle: -43
