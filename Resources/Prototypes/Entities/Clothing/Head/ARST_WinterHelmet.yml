@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ ClothingHeadBase, BaseRestrictedContraband ]
+  id: ARSTClothingHeadHatARSTGeneral
+  name: Arstotzki general's cap
+  description: Comrade! It's the general! Obey him, otherwise he will punish you! Long live Arstotzka, glory to Arstotzka!
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/ARST_WinterHelmet.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/ARST_WinterHelmet.rsi
