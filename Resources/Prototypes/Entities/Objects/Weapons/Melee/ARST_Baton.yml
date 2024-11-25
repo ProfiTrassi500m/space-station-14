@@ -1,0 +1,17 @@
+- type: entity
+  name: Soldier baton
+  parent: BaseBallBat
+  id: ARST_WeaponMeleeBatonSoldier
+  description: this baton clearly hurts, obviously.
+  suffix: Do not map
+  components:
+  - type: MeleeThrowOnHit
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 13
+        Structural: 7
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    size: Normal
