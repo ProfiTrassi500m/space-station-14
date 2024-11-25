@@ -1,0 +1,17 @@
+- type: entity
+  parent: [ ClothingHeadHelmetBase, BaseCentcommCommandContraband ]
+  id: ClothingHeadHelmetOMON
+  name: Russian OMON helmet
+  description: OMON is a special police detachment for special purposes, mainly the suppression of protests, rallies and other situations within a station or state with non-lethal weapons.
+  components:
+    - type: Sprite
+      sprite: Clothing/Head/Helmets/OMON_helmet.rsi
+    - type: Clothing
+      sprite: Clothing/Head/Helmets/OMON_helmet.rsi
+    - type: IngestionBlocker
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.10
+          Slash: 0.08
+          Piercing: 0.08

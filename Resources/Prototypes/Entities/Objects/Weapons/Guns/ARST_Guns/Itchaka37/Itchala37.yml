@@ -5,12 +5,12 @@
   description: An immortal classic. Uses .50 shotgun shells.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shotguns/Itchaka37_shotgun.rsi
+    sprite: Objects/Weapons/Guns/Shotguns/Itchaka37/Itchaka37_shotgun_sprite.rsi
   - type: Item
     size: Normal
     shape:
     - 0,0,4,0
-    sprite: Objects/Weapons/Guns/Shotguns/Itchaka37_shotgun_inhands_64x.rsi
+    sprite: Objects/Weapons/Guns/Shotguns/Itchaka37/Itchaka37_shotgun_inhands_64x.rsi
   - type: GunRequiresWield
   - type: Gun
     fireRate: 3
