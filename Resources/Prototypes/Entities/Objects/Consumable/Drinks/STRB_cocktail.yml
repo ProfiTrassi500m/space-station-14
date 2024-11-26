@@ -1,0 +1,20 @@
+- type: entity
+  parent: DrinkGlassBase
+  id: DrinkLatteСhilled
+  name: Latte chilled
+  description: Chilled drink based on espresso and milk.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Milk
+          Quantity: 10
+        - ReagentId: SoyLatte
+          Quantity: 10
+        - ReagentId: IceCream
+          Quantity: 10
+  - type: Drink
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/STRB_Drinks/STRB_LatteChilled.rsi
