@@ -1,0 +1,8 @@
+- type: entity
+  parent: BaseBarSign
+  id: ARST_ArstozkaMonitor
+  name: Arstozka monitor
+  description: Long live the free and great Arstotzka!
+  components:
+  - type: BarSign
+    current: arstozka
