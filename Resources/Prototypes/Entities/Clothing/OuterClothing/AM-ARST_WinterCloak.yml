@@ -1,6 +1,6 @@
 - type: entity
   parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseCommandContraband]
-  id: ARSTClothingNeckWhiteSoldierCloak
+  id: AM_ClothingNeckWhiteSoldierCloak
   name: Arstotzka's Soldier's White Coat
   description: This cloak is made of cheap material, but it is very warm to keep a person warm. She also seems respectable and businesslike. Glory to Arstotzka!
   components:
@@ -8,3 +8,4 @@
     sprite: Clothing/OuterClothing/Vests/ARST_WinterCloak.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/ARST_WinterCloak.rsi
+  syfix: Arstozka(AM) mod

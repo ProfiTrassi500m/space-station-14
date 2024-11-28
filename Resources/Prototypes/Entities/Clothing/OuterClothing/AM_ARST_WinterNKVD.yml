@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseCommandContraband]
+  id: AM_ClothingNeckWhiteNKVDCloak
+  name: Arstotzka's NKVD's Winter Coat
+  description: This cloak is made of cheap material, but it is very warm to keep a person warm. She also seems respectable and businesslike. Glory to Arstotzka!
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/ARST_WinterNKVD.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/ARST_WinterNKVD.rsi
+  syfix: Arstozka(AM) mod
