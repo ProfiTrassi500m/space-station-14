@@ -8,4 +8,10 @@
     current: arstozka
   - type: Sprite
     noRot: true
-    sprite: Structures/Wallmounts/ARST_ArstozkaMonitor1.rsi
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
