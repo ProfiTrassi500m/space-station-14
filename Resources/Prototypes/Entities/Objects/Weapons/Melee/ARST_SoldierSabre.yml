@@ -21,8 +21,3 @@
   - type: Tag
     tags:
     - SoldierSabre
-  - type: DisarmMalus
-  - type: SentienceTarget
-    flavorKind: station-event-random-sentience-flavor-inanimate
-    weight: 0.0002
-  - type: PirateAccent

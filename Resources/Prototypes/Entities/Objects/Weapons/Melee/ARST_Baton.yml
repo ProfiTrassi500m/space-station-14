@@ -3,15 +3,17 @@
   parent: BaseBallBat
   id: ARST_WeaponMeleeBatonSoldier
   description: this baton clearly hurts, obviously.
-  suffix: Do not map
+  - type: sprite
+    sprite: Objects/Weapons/Melee/ARST_Baton.rsi
+    state: icon
   components:
-  - type: MeleeThrowOnHit
   - type: MeleeWeapon
+    attackRate: 1.2
     damage:
       types:
-        Blunt: 13
+        Blunt: 7
         Structural: 7
     soundHit:
-      collection: MetalThud
+        path: /Audio/Weapons/boxingpunch1.ogg
   - type: Item
     size: Normal
