@@ -6,3 +6,6 @@
   components:
   - type: BarSign
     current: arstozka
+  - type: Sprite
+    noRot: true
+    sprite: Structures/Wallmounts/ARST_ArstozkaMonitor1.rsi
