@@ -17,6 +17,8 @@
     delay: 10
   - type: Speech
     speechSounds: Pai
+    whirelist:
+     
     
 # Created by profi_trassi_500m (discord) 
 - type: entity

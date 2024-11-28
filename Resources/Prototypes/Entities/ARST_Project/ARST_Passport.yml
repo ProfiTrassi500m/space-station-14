@@ -8,6 +8,14 @@
   components:
   - type: Sprite
     sprite: Objects/ARST_Project/ARST_Passport.rsi
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Document
+    - CoordinatesDisk
+  - type: Storage
+    maxItemSize: Normal
   - type: PhysicalComposition
   - type: UseDelay
     delay: 10
@@ -24,3 +32,7 @@
   components:
   - type: Sprite
     sprite: Objects/ARST_Project/ARST_Passport.rsi
+  - type: Tag
+    tags:
+    - Document
+    - CoordinatesDisk
