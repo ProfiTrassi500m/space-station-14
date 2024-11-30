@@ -1,8 +1,8 @@
 # Created by profi_trassi_500m (Discors)
 #Bullet lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
 - type: entity
-  id: Bullet5,56x45
-  name: 5,56x45 bullet  
+  id: Bullet7,62x39
+  name: 7,62x39 bullet
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -14,14 +14,14 @@
 - type: entity
   abstract: true
   parent: BaseItem
-  id: BaseMagazineBox5,56x45
+  id: BaseMagazineBo7,62x39
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5,56x45
-    proto: Cartridge5,56x45
+        - Cartridge7,62x39
+    proto: Cartridge7,62x39
     capacity: 90
   - type: Item
     size: Small
@@ -29,7 +29,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Objects/Weapons/Guns/ARST_Project/5,56x46-bullet/box.rsi
+    sprite: Objects/Weapons/Guns/ARST_Project/7,62x39-bullet/box.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -37,13 +37,13 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseMagazineBox5,56x45
-  id: MagazineBox5,56x45
-  name: 5,56x46 box
+  parent: BaseMagazineBox7,62x39
+  id: MagazineBox7,62x39
+  name: 7,62x39 box
   components:
   - type: BallisticAmmoProvider
     capacity: 90
-    proto: Cartridge5,56x45
+    proto: Cartridge7,62x39
   - type: Sprite
     layers:
     - state: base-b
@@ -57,8 +57,8 @@
   - type: Appearance
 #Magazine lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
 - type: entity
-  id: BaseMagazine5,56x45
-  name: "5,56x45 magazine"
+  id: BaseMagazine7,62x39
+  name: "7,62x39 magazine"
   parent: [ BaseItem, BaseRestrictedContraband ]
   abstract: true
   components:
@@ -71,13 +71,13 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge5,56x45
+        - Cartridge7,62x39
     capacity: 30
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: Objects/Weapons/Guns/ARST_Project/5,56x46-bullet/magazine.rsi
+    sprite: Objects/ARST_Project/7,62x39-bullet/magazine.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -90,12 +90,12 @@
   - type: Appearance
 
 - type: entity
-  id: Magazine5,56x45
-  name: "5,56x45 magazine"
-  parent: BaseMagazine5,56x45
+  id: Magazine7,62x39
+  name: "7,62x39 magazine"
+  parent: BaseMagazine7,62x39
   components:
   - type: BallisticAmmoProvider
-    proto: Cartridge5,56x45
+    proto: Cartridge7,62x39
   - type: Sprite
     layers:
     - state: red
@@ -104,8 +104,8 @@
       map: ["enum.GunVisualLayers.Mag"]
 #Caising lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll     
 - type: entity
-  id: BaseCartridge5,56x45
-  name: 5,56x45 cartridge
+  id: BaseCartridge
+  name: 7,62x39 cartridge
   parent: [ BaseCartridge, BaseRestrictedContraband ]
   abstract: true
   components:
@@ -114,9 +114,9 @@
       - Cartridge
       - CartridgeRifle
   - type: CartridgeAmmo
-    proto: Bullet5,56x45
+    proto: Bullet7,62x39
   - type: Sprite
-    sprite: Objects/Weapons/Guns/ARST_Project/5,56x46-bullet/cartridge.rsi
+    sprite: Objects/Weapons/Guns/ARST_Project/7,62x39-bullet/cartridge.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -124,10 +124,10 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: Cartridge5,56x45
-  name: 5,56x45 cartridge
-  parent: BaseCartridge5,56x45
+  id: Cartridge7,62x39
+  name: 7,62x39 cartridge
+  parent: BaseCartridge7,62x39
   components:
   - type: CartridgeAmmo
-    proto: Bullet5,56x45
+    proto: Bullet7,62x39
 #lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
