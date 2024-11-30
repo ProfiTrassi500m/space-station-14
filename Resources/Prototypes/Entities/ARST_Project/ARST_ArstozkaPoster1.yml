@@ -7,5 +7,4 @@
   description: "The huge mustachioed face scares you."
   components:
   - type: Sprite
-    state: bigbrother
     sprite: Structures/Wallmounts/ARST_ArstozkaPoster/BigBrother.rsi
