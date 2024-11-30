@@ -1,4 +1,3 @@
-# Created by profi_trassi_500m (discord) 
 - type: entity
   parent: BaseItem
   id: BaseFigurineUSSRmini
@@ -17,18 +16,22 @@
     delay: 10
   - type: Speech
     speechSounds: Pai
-    whirelist:
-     
-    
-# Created by profi_trassi_500m (discord) 
+
 - type: entity
   parent: BaseFigurineUSSRmini
   id: ARST_FigurineUSSRmini
   name: USSR mini flag
   description: The USSR flag is always relevant in negotiations and reminds on whose side there are nuclear warheads and a large armed army.
-  abstract: true 
+  abstract: true
   components:
   - type: Sprite
     sprite: Objects/ARST_Project/ARST_USSRFigurinemini.rsi
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 100
   - type: StaticPrice
     price: 75
+  - type: UseDelay
+    delay: 10
+  - type: Speech
+    speechSounds: Pai
