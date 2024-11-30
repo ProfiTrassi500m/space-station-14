@@ -20,8 +20,8 @@
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle
-    proto: CartridgeRifle
+        - Cartridge5,56x45
+    proto: Cartridge5,56x45
     capacity: 90
   - type: Item
     size: Small
@@ -42,8 +42,8 @@
   name: 5,56x46 box
   components:
   - type: BallisticAmmoProvider
-    capacity: 200
-    proto: CartridgeRifle
+    capacity: 90
+    proto: Cartridge5,56x45
   - type: Sprite
     layers:
     - state: base-b
@@ -71,7 +71,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle
+        - Cartridge5,56x45
     capacity: 30
   - type: ContainerContainer
     containers:
@@ -92,10 +92,10 @@
 - type: entity
   id: Magazine5,56x45
   name: "5,56x45 magazine"
-  parent: MagazineBox5,56x45
+  parent: BaseMagazine5,56x45
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle
+    proto: Cartridge5,56x45
   - type: Sprite
     layers:
     - state: red
@@ -116,7 +116,7 @@
   - type: CartridgeAmmo
     proto: Bullet5,56x45
   - type: Sprite
-    sprite: Objects/Weapons/Guns/ARST_Project/5,56x46-bullet/cartridge5,56x45
+    sprite: Objects/Weapons/Guns/ARST_Project/5,56x46-bullet/cartridge.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
