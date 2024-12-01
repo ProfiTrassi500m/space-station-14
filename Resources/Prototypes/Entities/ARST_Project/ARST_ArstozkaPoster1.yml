@@ -2,7 +2,7 @@
 # Sprited by shegare (Discord)
 - type: entity
   parent: PosterBase
-  id: PosterContrabandSmoke
+  id: PosterBigBrother
   name: "Big Brother is watching you."
   description: "The huge mustachioed face scares you."
   components:
