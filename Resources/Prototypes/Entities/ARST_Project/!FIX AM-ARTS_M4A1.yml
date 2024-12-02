@@ -31,21 +31,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: Magazine5,56x45
         insertSound: /Audio/ARST_Project/M4A1/ltrifle_magin.ogg
         ejectSound: /Audio/ARST_Project/M4A1/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+            - Magazine5,56x45
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeLightRifle
+        startingItem: Cartridge5,56x45
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+            - Cartridge5,56x45
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -77,21 +77,21 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineLightRifle
+        startingItem: Magazine5,56x45
         insertSound: /Audio/ARST_Project/M4A1/ltrifle_magin.ogg
         ejectSound: /Audio/ARST_Project/M4A1/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+            - Magazine5,56x45
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeLightRifle
+        startingItem: Cartridge5,56x45
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+            - Cartridge5,56x45
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
