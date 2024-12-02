@@ -6,9 +6,9 @@
   description: The heavy biohazard suit has metal plates to protect against bites or blasts. It also has radiation protection elements. The suit itself is too big and tight, too tight.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Suits/bombsuit.rsi
+    sprite: Clothing/ARST_Project/AM-ARST_BioSuits.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Suits/bombsuit.rsi
+    sprite: Clothing/ARST_Project/AM-ARST_BioSuits.rsi
   - type: ClothingSpeedModifier
     walkModifier: 0.4
     sprintModifier: 0.4
