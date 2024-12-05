@@ -10,8 +10,8 @@
   - type: Clothing
     sprite: Clothing/ARST_Project/AM-ARST_BioSuits.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.1
-    sprintModifier: 0.1
+    walkModifier: 0.3
+    sprintModifier: 0.2
   - type: Armor
     modifiers:
       coefficients:

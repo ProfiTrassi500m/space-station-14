@@ -1,3 +1,5 @@
+# Created by profi_trassi_500m (discord)
+# Base llllllllllllllllllllllllllllllllllllllllllllllllllllllll
 - type: entity
   name: BaseItchakaWeaponShotgun
   parent: BaseItem
@@ -12,7 +14,7 @@
   - type: Item
     size: Large
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Shotguns/BASEItchaka37_shotgun.rsi
+    sprite: Objects/ARST_Project/BASEItchaka37_shotgun.rsi
     quickEquip: false
     slots:
     - Back
@@ -39,3 +41,24 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
+# Irem lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+- type: entity
+  name: Itchaka model 37
+  parent: [BaseItchakaWeaponShotgun, BaseGunWieldable, BaseMinorContraband]
+  id: WeaponShotgunItchaka37
+  description: An immortal classic. Uses .50 shotgun shells.
+  components:
+  - type: Sprite
+    sprite: Objects/ARST_Project/Itchaka37/Itchaka37_shotgun_sprite.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: Objects/ARST_Project/Itchaka37/Itchaka37_shotgun_inhands_64x.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 3
+  - type: BallisticAmmoProvider
+    capacity: 5
+  - type: StaticPrice
+    price: 120
