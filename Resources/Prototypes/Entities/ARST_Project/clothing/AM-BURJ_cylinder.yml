@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: AM-BURJ_ClothingHeadHatCylinderVlue
+  name: Blue cylinder
+  description: sir! your capitalist wallet is too small to marry my daughter! If only Arstotzka had not come to power!
+  components:
+  - type: Sprite
+    sprite: Clothing/ARST_Project/AM-BURJ_cylinders/1.rsi
+  - type: Clothing
+    sprite: Clothing/ARST_Project/AM-BURJ_cylinders/1.rsi
