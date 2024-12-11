@@ -1,0 +1,8 @@
+- type: entity
+  parent: 1984_BaseBarSign
+  id: 1984_MonitorArstozkaGlory
+  name: propaganda monitor
+  description: a beautiful banner shines before you, glory to Arstotz!
+  components:
+  - type: BarSign
+    current: arstozkamonitor
