@@ -1,0 +1,8 @@
+- type: entity
+  parent: 1984_PosterBase
+  id: 1984_PosterWatching
+  name: "just look at us."
+  description: "black middle-aged man with a mustache... big brother?"
+  components:
+  - type: Sprite
+    state: poster_watching

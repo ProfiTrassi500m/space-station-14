@@ -1,0 +1,8 @@
+- type: entity
+  parent: 1984_PosterBase
+  id: 1984_PosterPyramide
+  name: "hierarchy pyramid."
+  description: "the entire hierarchy comes from the thought police and from big brother. big brother is your friend."
+  components:
+  - type: Sprite
+    state: poster_pyramid

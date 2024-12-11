@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: 1984_BlueWorkOveralls
+  name: blue work overalls
+  description: blue work overalls are a classic work uniform for both ordinary workers and party members. mostly the more elite party members wear black.
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Prototype/blueworkoveralls.rsi
+  - type: Clothing
+    sprite: Clothing/1984_Prototype/blueworkoveralls.rsi

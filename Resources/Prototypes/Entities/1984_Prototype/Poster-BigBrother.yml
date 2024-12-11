@@ -1,0 +1,8 @@
+- type: entity
+  parent: 1984_PosterBase
+  id: 1984_PosterBigBrotcher
+  name: "big brother is watching you."
+  description: "The television is only ours, all the cameras are ours and big brother is watching them."
+  components:
+  - type: Sprite
+    state: poster_bigbrother
