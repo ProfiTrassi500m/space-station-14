@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: 1984_MilitiaUniform
+  name: militia uniform
+  description: The militia uniform is the most terrifying thing a standard party member can see. They serve only their brother and no one else.
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Prototype/AM-Clothing-MilitiaUniform.rsi
+  - type: Clothing
+    sprite: Clothing/1984_Prototype/AM-Clothing-MilitiaUniform.rsi
