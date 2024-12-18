@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseRestrictedContraband]
+  id: 1984_Armor-MilitiaVest1
+  name: militia vest 
+  description: body armor that protects against blows and bullets.
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Project/Armor-MilitiaVest1.yml
+  - type: Clothing
+    sprite: Clothing/1984_Project/Armor-MilitiaVest1.yml
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.3
+        Heat: 0.4
+        Caustic: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: GroupExamine
