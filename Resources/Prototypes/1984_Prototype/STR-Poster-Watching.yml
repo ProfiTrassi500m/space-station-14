@@ -1,8 +1,11 @@
+# Created by profi_trassi_500m (Discord)
+########## Item #####################################################
 - type: entity
   parent: 1984_PosterBase
   id: 1984_PosterWatching
   name: "just look at us."
   description: "black middle-aged man with a mustache... big brother?"
+  suffix: EVENT ITEM
   components:
   - type: Sprite
     state: poster_watching
