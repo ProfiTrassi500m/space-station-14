@@ -1,0 +1,33 @@
+# Created by profi_trassi_500m (Discord)
+########## Base #####################################################
+- type: entity
+  parent: ClothingHeadBase
+  id: 1984_BaseArmor-MilitiaHelmet
+  abstract: true
+  components:
+  - type: Armor 
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - HeadTop
+    - HeadSide
+########## Item #####################################################
+- type: entity
+  parent: [ 1984_BaseArmor-MilitiaHelmet, BaseRestrictedContraband ]
+  id: 1984_Armor-MilitiaHelmet
+  name: militia helmet
+  description: a police helmet adopted by all authorities to counteract certain things.
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Project/Armor-MilitiaHelmet.yml
+  - type: Clothing
+    sprite: Clothing/1984_Project/Armor-MilitiaHelmet.yml
