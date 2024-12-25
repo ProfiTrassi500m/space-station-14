@@ -1,0 +1,24 @@
+# Created by profi_trassi_500m (Discord)
+########## Item #####################################################
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseRestrictedContraband]
+  id: 1984_Armor-MilitiaVest2
+  name: militia vest 
+  description: body armor that protects against blows and bullets.
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Project/Armor-MilitiaVest2.yml
+  - type: Clothing
+    sprite: Clothing/1984_Project/Armor-MilitiaVest2.yml
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.02
+        Slash: 0.02
+        Piercing: 0.03
+        Heat: 0.04
+        Caustic: 0.05
+  - type: ExplosionResistance
+    damageCoefficient: 0.04
+  - type: GroupExamine

@@ -2,12 +2,12 @@
 ########## Item #####################################################
 - type: entity
   parent: ClothingUniformBase
-  id: 1984_MilitiaUniform
+  id: 1984_MilitiaUniform2
   name: militia uniform
   description: The militia uniform is the most terrifying thing a standard party member can see. They serve only their brother and no one else.
   suffix: EVENT ITEM
   components:
   - type: Sprite
-    sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform.rsi
+    sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform1.rsi
   - type: Clothing
-    sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform.rsi
+    sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform1.rsi
