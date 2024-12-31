@@ -8,6 +8,6 @@
   suffix: EVENT ITEM
   components:
   - type: Sprite
-    sprite: Clothing/1984_Prototype/AM-Clothing-PartiyaUniform.rsi
+    sprite: Clothing/1984_Project/AM-Clothing-PartiyaUniform.rsi
   - type: Clothing
-    sprite: Clothing/1984_Prototype/AM-Clothing-PartiyaUniform.rsi
+    sprite: Clothing/1984_Project/AM-Clothing-PartiyaUniform.rsi

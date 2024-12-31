@@ -1,0 +1,12 @@
+# Created by profi_trassi_500m (Discord)
+########## Item #####################################################
+- type: entity
+  parent: [ ClothingHeadBase, BaseRestrictedContraband ]
+  id: 1984_HatMilitiaHat1
+  name: militia hat
+  description: This cap serves as the main attribute in contrast to the usual lower classes and the militia.
+  components:
+  - type: Sprite
+    sprite:  Clothing/1984_Prototype/AM-Hat-MilitiaHat1.rsi
+  - type: Clothing
+    sprite:  Clothing/1984_Prototype/AM-Hat-MilitiaHat1.rsi
