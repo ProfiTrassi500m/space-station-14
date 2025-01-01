@@ -2,12 +2,12 @@
 ########## Item #####################################################
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]
-  id: AM_WebbingPoliceBelt2
+  id: 1984_WebbingPoliceBelt2
   name: Police belt
   description: The police belt is equipped with baton scissors and a holster. Everything for the convenience of the thought police and authorities.
   suffix: EVENT ITEM
   components:
   - type: Sprite
-    sprite: Clothing/1984_Prototype/AM-Webbing-PoliceBelt2.rsi
+    sprite: Clothing/1984_Project/AM-Webbing-PoliceBelt2.rsi
   - type: Clothing
-    sprite: Clothing/1984_Prototype/AM-Webbing-PoliceBelt2.rsi
+    sprite: Clothing/1984_Project/AM-Webbing-PoliceBelt2.rsi

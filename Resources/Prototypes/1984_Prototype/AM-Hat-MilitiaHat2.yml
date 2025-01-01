@@ -7,6 +7,6 @@
   description: This cap serves as the main attribute in contrast to the usual lower classes and the militia.
   components:
   - type: Sprite
-    sprite:  Clothing/1984_Prototype/AM-Hat-MilitiaHat2.rsi
+    sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat2.rsi
   - type: Clothing
-    sprite:  Clothing/1984_Prototype/AM-Hat-MilitiaHat2.rsi
+    sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat2.rsi
