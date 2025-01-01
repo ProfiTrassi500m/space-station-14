@@ -1,0 +1,9 @@
+- type: entity
+  id: 1984_BannerArstozka
+  parent: 1984_BannerBase
+  name: nanotrasen banner
+  description: A banner displaying the Nanotrasen logo. It looks rather cheap.
+  components:
+  - type: Sprite
+    sprite: Structures/1984_Banner.rsi
+    state: banner_arstozka

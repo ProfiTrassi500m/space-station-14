@@ -1,0 +1,41 @@
+# Created by profi_trassi_500m (Discord)
+########## Base #####################################################
+- type: entity
+- type: entity
+  id: 1984_BannerBase
+  parent: BaseStructureDynamic
+  name: base banner
+  description: It's the concept of a banner, you shouldn't be seeing this.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Structures/1984_Banner.rsi
+    state: banner
+    noRot: true
+  - type: Transform
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - HighImpassable
+        - BulletImpassable
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
