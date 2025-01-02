@@ -1,9 +1,0 @@
-- type: entity
-  id: 1984_BannerArstozka
-  parent: 1984_BannerBase
-  name: Arstozka banner
-  description: 
-  components:
-  - type: Sprite
-    sprite: Structures/1984_Banner.rsi
-    state: 1984_BannerArstozka
