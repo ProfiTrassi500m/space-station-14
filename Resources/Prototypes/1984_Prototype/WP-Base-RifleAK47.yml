@@ -1,0 +1,56 @@
+# Created by profi_trassi_500m (Discord)
+########## Base #####################################################
+- type: entity
+  name: BaseWeaponRifle
+  parent: [BaseItem, BaseGunWieldable]
+  id: 1984_BaseWeaponRifleAK47
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/1984_Project/1984_rifleAk47/big
+  - type: Item
+    sprite: Objects/1984_Project/1984_rifleAk47/tiny
+    size: Huge
+  - type: Clothing
+    sprite: Objects/1984_Project/1984_rifleAk47/tiny
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 500
