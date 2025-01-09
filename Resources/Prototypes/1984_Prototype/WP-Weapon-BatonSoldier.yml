@@ -1,40 +1,23 @@
 # Created by profi_trassi_500m (Discord)
-########## Base #####################################################
+########## Item #####################################################
 - type: entity
-  name: Militia sabre
   parent: BaseItem
-  id: "Base-1984_MeleeWeaponSabreMilitia"
-  description: Militia sabre
+  id: WeaponMeleeToolboxRobust
+  name: Militia baton
+  description: Militia baton
   suffix: EVENT ITEM
   components:
   - type: Sprite
-    sprite: Objects/1984_Project/1984_MilitiaSabre
+    sprite: Objects/1984_Project/1984_MilitiaBaton.rsi
     state: icon
   - type: Item
-    sprite: Objects/1984_Project/1984_MilitiaSabre
     size: Normal
+    sprite: Objects/1984_Project/1984_MilitiaBaton.rsi
   - type: MeleeWeapon
-    wideAnimationRotation: 90
+    wideAnimationRotation: -135
     attackRate: 1.5
     damage:
       types:
-        Blunt: 18
+        Blunt: 14
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
-########## Item #####################################################
-- type: entity
-  id: 1984_MeleeWeaponSabreMilitia
-  name: Militia sabre
-  parent: [BaseSyndicateContraband, Base-1984_MeleeWeaponSabreMilitia]
-  description: Militia sabre
-  components:
-  - type: MeleeWeapon
-    wideAnimationRotation: 90
-  - type: IgniteOnMeleeHit
-    fireStacks: 1
-  - type: Sprite
-    sprite: Objects/1984_Project/1984_MilitiaSabre
-    state: icon
-  - type: Clothing
-    sprite: Objects/1984_Project/1984_MilitiaSabre
-    quickEquip: false
