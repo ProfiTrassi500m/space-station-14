@@ -5,6 +5,7 @@
   id: 1984_HatMilitiaHat1
   name: militia hat
   description: This cap serves as the main attribute in contrast to the usual lower classes and the militia.
+  suffix: EVENT ITEM
   components:
   - type: Sprite
     sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat1.rsi
