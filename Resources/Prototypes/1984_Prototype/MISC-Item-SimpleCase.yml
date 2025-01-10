@@ -1,10 +1,14 @@
+# Created by profi_trassi_500m (Discord)
+########## Item ###################################################
 - type: entity
   parent: BriefcaseBase
-  id: 1984_BriefcaseBrown
-  name: brown briefcase
+  id: 1984_SimpleCase
+  name: Simple case
+  description: Simple oficer case...
+  suffix: EVENT ITEM
   components:
   - type: Sprite
-    sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+    sprite: Objects/1984_Project/1984_SimpleCase.rsi
     state: icon
   - type: Item
     sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
