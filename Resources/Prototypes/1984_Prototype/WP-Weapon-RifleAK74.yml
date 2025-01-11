@@ -1,7 +1,7 @@
 # Created by profi_trassi_500m (Discord)
 ########## Item #####################################################
 - type: entity
-  name: AKMS
+  name: AK-74
   parent: [1984_BaseWeaponRifleAK47, BaseRestrictedContraband]
   id: 1984_WeaponRifleAk
   description: An iconic weapon of war. Uses .30 rifle ammo.
