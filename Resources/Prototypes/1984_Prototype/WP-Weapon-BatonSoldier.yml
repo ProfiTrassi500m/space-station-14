@@ -1,8 +1,10 @@
 # Created by profi_trassi_500m (Discord)
+########## Base #####################################################
+
 ########## Item #####################################################
 - type: entity
-  parent: BaseItem
-  id: WeaponMeleeToolboxRobust
+  parent: WeaponMeleeToolboxRobust 
+  id: 1984_MilitiaBaton
   name: Militia baton
   description: Militia baton
   suffix: EVENT ITEM
