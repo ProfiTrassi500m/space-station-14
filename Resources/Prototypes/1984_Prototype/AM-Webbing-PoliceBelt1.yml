@@ -1,13 +1,15 @@
-# Created by profi_trassi_500m (Discord)
 ########## Item #####################################################
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]
   id: 1984_WebbingPoliceBelt1
   name: Police belt
-  description: The police belt is equipped with baton scissors and a holster. Everything for the convenience of the thought police and authorities.
+  description: 
   suffix: EVENT ITEM
   components:
   - type: Sprite
     sprite: Clothing/1984_Project/AM-Webbing-PoliceBelt1.rsi
   - type: Clothing
     sprite: Clothing/1984_Project/AM-Webbing-PoliceBelt1.rsi
+########## |Create #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discord) #####################################################

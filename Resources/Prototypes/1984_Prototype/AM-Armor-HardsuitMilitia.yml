@@ -1,10 +1,9 @@
-# Created by profi_trassi_500m (Discord)
 ########## Item #####################################################
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: 1984_HardsuitsMilitia
   name: Hardsuit Militia
-  description: Special hardsuit of militia officer
+  description: 
   suffix: EVENT ITEM
   components:
   - type: Sprite
@@ -21,3 +20,6 @@
         Piercing: 0.3
         Caustic: 0.3
   - type: HeldSpeedModifier
+########## |Create: #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discrod) ###################################################

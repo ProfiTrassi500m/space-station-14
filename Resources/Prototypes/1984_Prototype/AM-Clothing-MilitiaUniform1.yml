@@ -1,13 +1,15 @@
-# Created by profi_trassi_500m (Discord)
 ########## Item #####################################################
 - type: entity
   parent: ClothingUniformBase
   id: 1984_MilitiaUniform1
   name: militia uniform
-  description: The militia uniform is the most terrifying thing a standard party member can see. They serve only their brother and no one else.
+  description: 
   suffix: EVENT ITEM
   components:
   - type: Sprite
     sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform1.rsi
   - type: Clothing
     sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform1.rsi
+########## |Create #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discord) #####################################################

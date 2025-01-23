@@ -1,13 +1,15 @@
-# Created by profi_trassi_500m (Discord)
 ########## Item #####################################################
 - type: entity
   parent: ClothingUniformBase
   id: 1984_ClothingMedicineUniforme1
   name: medicine uniforme
-  description: This is the classic medical worker uniform. in ordinary cases, it is often used to help friends at the front or in field hospitals.
+  description: 
   suffix: EVENT ITEM
   components:
   - type: Sprite
     sprite: Clothing/1984_Project/MD-Clothing-MedicineUniforme1.rsi
   - type: Clothing
     sprite: Clothing/1984_Project/MD-Clothing-MedicineUniforme1.rsi
+########## |Create #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discord) #####################################################

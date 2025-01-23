@@ -1,10 +1,9 @@
-# Created by profi_trassi_500m (Discord)
 ########## Item #####################################################
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseRestrictedContraband]
   id: 1984_Armor-MilitiaVest1
   name: militia vest 
-  description: body armor that protects against blows and bullets.
+  description: 
   suffix: EVENT ITEM
   components:
   - type: Sprite
@@ -22,3 +21,6 @@
   - type: ExplosionResistance
     damageCoefficient: 0.4
   - type: GroupExamine
+########## |Create #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discord) #####################################################

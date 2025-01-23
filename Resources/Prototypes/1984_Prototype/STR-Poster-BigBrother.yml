@@ -1,11 +1,13 @@
-# Created by profi_trassi_500m (Discord)
 ########## Item #####################################################
 - type: entity
   parent: 1984_PosterBase
   id: 1984_PosterBigBrotcher
   name: "big brother is watching you."
-  description: "The television is only ours, all the cameras are ours and big brother is watching them."
+  description: 
   suffix: EVENT ITEM
   components:
   - type: Sprite
     state: poster_bigbrother
+########## |Create #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discord) #####################################################

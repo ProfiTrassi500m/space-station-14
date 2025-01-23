@@ -1,4 +1,3 @@
-# Created by profi_trassi_500m (Discord)
 ########## Base #####################################################
 - type: entity
   parent: ClothingHeadBase
@@ -22,12 +21,15 @@
 ########## Item #####################################################
 - type: entity
   parent: [ 1984_BaseArmor-MilitiaHelmet, BaseRestrictedContraband ]
-  id: 1984_Armor-MilitiaHelmet
+  id: 1984_Armor-MilitiaHelmet1
   name: militia helmet
-  description: a police helmet adopted by all authorities to counteract certain things.
+  description: 
   suffix: EVENT ITEM
   components:
   - type: Sprite
-    sprite: Clothing/1984_Project/Armor-MilitiaHelmet.yml
+    sprite: Clothing/1984_Project/AM-Armor-MilitiaHelmet1.rsi
   - type: Clothing
-    sprite: Clothing/1984_Project/Armor-MilitiaHelmet.yml
+    sprite: Clothing/1984_Project/\AM-Armor-MilitiaHelmet1.rsi
+########## |Create: #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discrod) #####################################################

@@ -1,0 +1,15 @@
+########## Item #####################################################
+- type: entity
+  parent: [ 1984_BaseArmor-MilitiaHelmet, BaseRestrictedContraband ]
+  id: 1984_Armor-MilitiaHelmet2
+  name: militia helmet
+  description: 
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Project/Armor-MilitiaHelmet2.yml
+  - type: Clothing
+    sprite: Clothing/1984_Project/Armor-MilitiaHelmet2.yml
+########## |Create: #####################################################
+########## |21.01.2025 #####################################################
+########## |profi_trassi_500m (Discrod) #####################################################
