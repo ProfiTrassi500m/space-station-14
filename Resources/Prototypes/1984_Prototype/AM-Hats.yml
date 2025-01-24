@@ -1,4 +1,4 @@
-########## Item #####################################################
+########## Item-1 #####################################################
 - type: entity
   parent: [ ClothingHeadBase, BaseRestrictedContraband ]
   id: 1984_HatMilitiaHat1
@@ -10,6 +10,18 @@
     sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat1.rsi
   - type: Clothing
     sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat1.rsi
+########## Item-2 #####################################################
+- type: entity
+  parent: [ ClothingHeadBase, BaseRestrictedContraband ]
+  id: 1984_HatMilitiaHat2
+  name: militia hat
+  description:
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat2.rsi
+  - type: Clothing
+    sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat2.rsi
 ########## Item #####################################################
 ########## Item #####################################################
 ########## Item #####################################################

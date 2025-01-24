@@ -1,0 +1,16 @@
+########## Item ###################################################
+- type: entity
+  parent: BriefcaseBase
+  id: 1984_SimpleCase
+  name: Simple case
+  description: 
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    sprite: Objects/1984_Project/1984_SimpleCase.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/1984_Project/1984_SimpleCase.rsi
+    ########## |Create #####################################################
+########## |24.01.2025 #####################################################
+########## |profi_trassi_500m (Discord) #####################################################

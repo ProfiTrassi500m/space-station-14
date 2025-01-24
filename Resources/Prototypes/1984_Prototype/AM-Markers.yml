@@ -1,0 +1,58 @@
+########## Base #####################################################
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: 1984_Markers
+  name: profession marker
+  description:
+  components:
+  - type: Sprite
+    sprite: Objects/1984_Project/1984_Markers.rsi
+  - type: Item
+    sprite: Objects/1984_Project/1984_Markers.rsi
+    size: Tiny
+########## Item-1 #####################################################
+- type: entity
+  parent: 1984_Markers
+  id: 1984_Marker-1
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    state: militia
+########## Item-2 #####################################################
+- type: entity
+  parent: 1984_Markers
+  id: 1984_Marker-2
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    state: officer
+########## Item-3 #####################################################
+- type: entity
+  parent: 1984_Markers
+  id: 1984_Marker-3
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    state: command
+########## Item-4 #####################################################
+- type: entity
+  name: marking marker
+  parent: BoxCardboard
+  id: 1984_MarkingMarker
+  description:
+  suffix: EVENT ITEM 
+  components:
+    - type: Item
+      shape:
+      - 0,0,1,1
+    - type: StorageFill
+      contents:
+        - id: 1984_Marker-1
+        - id: 1984_Marker-2
+        - id: 1984_Marker-3
+    - type: Sprite
+    - state: box
+########## |Create #####################################################
+########## |24.01.2025 #####################################################
+########## |profi_trassi_500m (Discord) #####################################################

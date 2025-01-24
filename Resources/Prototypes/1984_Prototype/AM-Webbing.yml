@@ -1,4 +1,16 @@
-########## Item #####################################################
+########## Item-1 #####################################################
+- type: entity
+  parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]
+  id: 1984_WebbingPoliceBelt1
+  name: Police belt
+  description: 
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Project/AM-Webbing-PoliceBelt1.rsi
+  - type: Clothing
+    sprite: Clothing/1984_Project/AM-Webbing-PoliceBelt1.rsi
+########## Item-2 #####################################################
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseSecurityCargoContraband ]
   id: 1984_WebbingPoliceBelt2
