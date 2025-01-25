@@ -36,23 +36,41 @@
   - type: Sprite
     state: command
 ########## Item-4 #####################################################
+########## Base-2 #####################################################
 - type: entity
-  name: Markers
-  parent: BoxCardboard
-  id: 1984_Prof-Markers
-  description: 
-  syffix: EVENT ITEM
+  id: BoxBase
+  parent: BaseStorageItem
+  abstract: true
   components:
-    - type: Item
-      shape:
-      - 0,0,1,1
-    - type: StorageFill
-      contents:
+  - type: Sprite
+    sprite: Objects/Storage/boxes.rsi
+  - type: Item
+    sprite: Objects/Storage/boxes.rsi
+    size: Large
+    shape:
+    - 0,0,2,2
+  - type: Storage
+    contents:
         - id: 1984_Marker-1
         - id: 1984_Marker-2
         - id: 1984_Marker-3
-        - id: EvidenceMarkerFour
-    - type: Sprite
+    maxItemSize: Small
+    grid:
+    - 0,0,2,2
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: Construction
+    graph: BoxCardboard
+    node: boxcardboard
+    containers:
+      - entity_storage
+  - type: PhysicalComposition
+    materialComposition:
+      Cardboard: 100
+  - type: StaticPrice
+    price: 10
+########## Item-5 #####################################################
 ########## |Create #####################################################
 ########## |24.01.2025 #####################################################
 ########## |profi_trassi_500m (Discord) #####################################################
