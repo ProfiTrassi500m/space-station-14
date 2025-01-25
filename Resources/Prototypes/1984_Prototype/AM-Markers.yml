@@ -37,11 +37,11 @@
     state: command
 ########## Item-4 #####################################################
 - type: entity
-  name: marking marker
+  name: Markers
   parent: BoxCardboard
-  id: 1984_MarkingMarker
-  description:
-  suffix: EVENT ITEM 
+  id: 1984_Prof-Markers
+  description: 
+  syffix: EVENT ITEM
   components:
     - type: Item
       shape:
@@ -51,8 +51,8 @@
         - id: 1984_Marker-1
         - id: 1984_Marker-2
         - id: 1984_Marker-3
+        - id: EvidenceMarkerFour
     - type: Sprite
-      state: box
 ########## |Create #####################################################
 ########## |24.01.2025 #####################################################
 ########## |profi_trassi_500m (Discord) #####################################################
