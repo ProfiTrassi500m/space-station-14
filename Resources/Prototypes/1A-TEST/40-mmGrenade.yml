@@ -33,7 +33,26 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 ########## bullet ###################################################
--
+- type: entity
+  id: test-40-mmGrenade
+  name: 40-mm greande
+  parent: [BaseItem, BaseMajorContraband]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Grenade
+  - type: Item
+    size: Small
+  - type: Sprite
+
+- type: entity
+  id: event-40mmgrenade
+  name: 40-mm grenade
+  parent: test-40-mmGrenade
+  components:
+  - type: Sprite
+    sprite: #sprite-40mmGrenade
 ########## |Create #####################################################
 ########## |24.01.2025 #####################################################
 ########## |profi_trassi_500m (Discord) #####################################################

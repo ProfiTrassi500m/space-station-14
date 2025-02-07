@@ -10,6 +10,8 @@
     sprite: Clothing/1984_Project/Armor-MilitiaVest2.yml
   - type: Clothing
     sprite: Clothing/1984_Project/Armor-MilitiaVest2.yml
+    equipSound:
+      path: /Audio/armor_equip.ogg
   - type: Armor
     modifiers:
       coefficients:
@@ -33,6 +35,8 @@
     sprite: Clothing/1984_Project/Armor-MilitiaVest1.yml
   - type: Clothing
     sprite: Clothing/1984_Project/Armor-MilitiaVest1.yml
+    equipSound:
+      path: /Audio/armor_equip.ogg
   - type: Armor
     modifiers:
       coefficients:

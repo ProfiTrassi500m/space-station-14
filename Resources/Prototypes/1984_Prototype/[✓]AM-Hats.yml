@@ -10,6 +10,8 @@
     sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat1.rsi
   - type: Clothing
     sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat1.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
 ########## Item-2 #####################################################
 - type: entity
   parent: [ ClothingHeadBase, BaseRestrictedContraband ]
@@ -22,6 +24,8 @@
     sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat2.rsi
   - type: Clothing
     sprite:  Clothing/1984_Project/AM-Hat-MilitiaHat2.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
 ########## Item #####################################################
 ########## Item #####################################################
 ########## Item #####################################################

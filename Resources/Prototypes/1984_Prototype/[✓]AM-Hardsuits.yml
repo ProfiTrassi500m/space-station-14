@@ -10,6 +10,8 @@
     sprite: Clothing/1984_Project/1984_MilitiaHardsuits.rsi
   - type: Clothing
     sprite: Clothing/1984_Project/1984_MilitiaHardsuits.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: Armor

@@ -10,6 +10,8 @@
     sprite: Clothing/1984_Project/AM-Clothing-PartiyaUniform.rsi
   - type: Clothing
     sprite: Clothing/1984_Project/AM-Clothing-PartiyaUniform.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
 ########## Item-2 #####################################################
 - type: entity
   parent: ClothingUniformBase
@@ -22,6 +24,8 @@
     sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform2.rsi
   - type: Clothing
     sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform2.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
 ########## Item-3 #####################################################
 - type: entity
   parent: ClothingUniformBase
@@ -34,6 +38,8 @@
     sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform1.rsi
   - type: Clothing
     sprite: Clothing/1984_Project/AM-Clothing-MilitiaUniform1.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
 ########## |Create #####################################################
 ########## |21.01.2025 #####################################################
 ########## |profi_trassi_500m (Discord) #####################################################

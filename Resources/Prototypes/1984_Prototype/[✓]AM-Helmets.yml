@@ -29,7 +29,9 @@
   - type: Sprite
     sprite: Clothing/1984_Project/AM-Armor-MilitiaHelmet2.rsi
   - type: Clothing
-    sprite: Clothing/1984_Project/\AM-Armor-MilitiaHelmet2.rsi
+    sprite: Clothing/1984_Project/AM-Armor-MilitiaHelmet2.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
 ########## Base-2 #####################################################
 - type: entity
   parent: ClothingHeadBase
@@ -61,7 +63,23 @@
   - type: Sprite
     sprite: Clothing/1984_Project/AM-Armor-MilitiaHelmet1.rsi
   - type: Clothing
-    sprite: Clothing/1984_Project/\AM-Armor-MilitiaHelmet1.rsi
+    sprite: Clothing/1984_Project/AM-Armor-MilitiaHelmet1.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
+########## Item-3 #####################################################
+- type: entity
+  parent: [ 1984_BaseArmor-MilitiaHelmet2, BaseRestrictedContraband ]
+  id: 1984_Armor-MilitiaHelmet3
+  name: militia helmet
+  description: 
+  suffix: EVENT ITEM
+  components:
+  - type: Sprite
+    sprite: Clothing/1984_Project/AM-Armor-MilitiaHelmet3.rsi
+  - type: Clothing
+    sprite: Clothing/1984_Project/AM-Armor-MilitiaHelmet3.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
 ########## |Create: #####################################################
 ########## |21.01.2025 #####################################################
 ########## |profi_trassi_500m (Discrod) #####################################################
