@@ -4,7 +4,6 @@
   id: 1984_Armor-MilitiaVest2
   name: militia vest 
   description:
-
   components:
   - type: Sprite
     sprite: Clothing/1984_Project/Armor-MilitiaVest2.yml

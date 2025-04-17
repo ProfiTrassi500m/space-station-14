@@ -1,0 +1,34 @@
+#Medival armor 1lvl2
+- type: entity
+  parent: [MedivalArmorBase, AllowSuitStorageClothing, BaseRestrictedContraband]
+  id: MedivalArmor1LVL2
+  name: Medival armor
+  description: 
+  suffix: MEDIVAL
+  components:
+  - type: Sprite
+    sprite: Clothing/MedivalArmor/MedivalArmor1lvl2.rsi
+  - type: Clothing
+    sprite: Clothing/MedivalArmor/MedivalArmor1lvl2.rsi
+    equipSound:
+      path: /Audio/armor_equip.ogg
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.10
+        Slash: 0.10
+        Heat: 0.10
+        Caustic: 0.10
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 0.20
+    sprintModifier: 0.20
+  - type: GroupExamine
