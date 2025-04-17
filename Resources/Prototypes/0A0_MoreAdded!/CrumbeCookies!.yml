@@ -1,0 +1,141 @@
+- type: entity
+  parent: BaseItem
+  id: FoodBaseCC
+  abstract: true                   
+  components:
+  - type: FlavorProfile            
+    flavors:
+      - food
+      - funny
+  - type: Food
+  - type: SpaceGarbage                   
+  - type: Sprite
+  - type: StaticPrice                   
+    price: 0                      
+##################################################################################################
+- type: entity
+  name: Chocolate cookies                   
+  parent: FoodBaseCC                  
+  id: ChocolateCookiesCC
+  description: Uamy!                 
+  components:
+  suffix: Crunble Cookies                   
+  - type: Food                
+  - type: Item
+    size: Small                 
+  - type: Tag                       
+    tags:
+      - FoodSnack                
+  - type: Sprite                   
+    sprite: Objects/Consumable/CrunbleCookies/Chocolat.rsi
+  - type: SolutionContainerManager                   
+    solutions:                     
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Theobromine
+          Quantity: 5
+        - ReagentId: CocoaPowder
+          Quantity: 4
+##################################################################################################
+- type: entity
+  name: Coconout cookies                   
+  parent: FoodBaseCC                
+  id: CoconoutCookiesCC
+  description: Uamy!                  
+  components:
+  suffix: Crunble Cookies                 
+  - type: Food                   
+  - type: Item                     
+    size: Small                  
+  - type: Tag                    
+    tags:
+      - FoodSnack                   
+  - type: Sprite                   
+    sprite: Objects/Consumable/CrunbleCookies/Coconout.rsi
+  - type: SolutionContainerManager
+    solutions:                   
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Theobromine
+          Quantity: 5
+##################################################################################################
+- type: entity
+  name: Banana cookies                   
+  parent: FoodBaseCC               
+  id: CoconoutCookiesCC
+  description: Uamy!                      
+  components:
+  suffix: Crunble Cookies               
+  - type: Food                  
+  - type: Item                   
+    size: Small                   
+  - type: Tag                     
+    tags:
+      - FoodSnack                   
+  - type: Sprite                
+    sprite: 
+  - type: SolutionContainerManager
+    solutions:                    
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: JuiceBanana
+          Quantity: 20
+          ##################################################################################################
+          - type: entity
+          name: Carrot cookies                  
+          parent: FoodBaseCC                
+          id: CarrotCookiesCC
+          description: Uamy!                      
+          components:
+          suffix: Crunble Cookies                   
+          - type: Food                
+          - type: Item                   
+            size: Small                 
+          - type: Tag                  
+            tags:
+              - FoodSnack                   
+          - type: Sprite                   
+            sprite: 
+          - type: SolutionContainerManager
+            solutions:                     
+              food:
+                maxVol: 40
+                reagents:
+                - ReagentId: Nutriment
+                  Quantity: 20
+                - ReagentId: JuiceApple
+                  Quantity: 20
+                  ##################################################################################################
+                  - type: entity
+                  name: Apple cookies                
+                  parent: FoodBaseCC                 
+                  id: ApleCookiesCC
+                  description: Uamy!                      
+                  components:
+                  suffix: Crunble Cookies                   
+                  - type: Food                 
+                  - type: Item                 
+                    size: Small                  
+                  - type: Tag          
+                    tags:
+                      - FoodSnack                
+                  - type: Sprite                 
+                    sprite: 
+                  - type: SolutionContainerManager
+                    solutions:                     
+                      food:
+                        maxVol: 40
+                        reagents:
+                        - ReagentId: Nutriment
+                          Quantity: 20
+                        - ReagentId: JuiceApple
+                          Quantity: 20
