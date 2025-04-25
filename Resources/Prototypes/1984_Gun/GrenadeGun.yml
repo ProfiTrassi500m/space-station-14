@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseThrowable 
+  parent: BaseItem
   id: FragGrenade
   name: Fragmentation Grenade
   description: "Explodes after a short delay, dealing shrapnel damage."

@@ -30,7 +30,7 @@
       requiredAccess: armory
 
 - type: entity
-  parent: BaseAmmo
+  parent: BaseBullet
   id: Ammo9mm
   name: 9mm Ammo
   description: Standard ammunition for SMGs.
@@ -42,7 +42,7 @@
       sprite: Objects/Materials/Ammo/9mm.rsi
     
 - type: entity
-  parent: BaseProjectile
+  parent: BaseItem
   id: Bullet9mm
   components:
     - type: Projectile
