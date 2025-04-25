@@ -1,0 +1,53 @@
+- type: entity
+  parent: BaseItem
+  id: PrototypeSMG
+  name: Submachine Gun
+  description: A compact, fully automatic firearm. Effective at close range.
+  components:
+    - type: Sprite
+      sprite: Weapons/Guns/SMG/smg.rsi
+      layers:
+        - state: smg
+    - type: Item
+      sprite: Weapons/Guns/SMG/smg.rsi
+      size: 5
+      equipSound:
+        path: /Audio/Weapons/Guns/SMG/equip.ogg
+    - type: Gun
+      fireRate: 10         
+      recoil: 0.5          
+      projectile: Bullet9mm 
+      ammoType: Ammo9mm    
+      maxAmmo: 30          
+      spawnWithAmmo: true  
+    - type: Storage
+      grid:
+        - 0,0,1,1 
+    - type: ProjectileWeapon
+      damageType: Piercing
+      baseDamage: 12
+    - type: RestrictedContraband
+      requiredAccess: armory
+
+- type: entity
+  parent: BaseAmmo
+  id: Ammo9mm
+  name: 9mm Ammo
+  description: Standard ammunition for SMGs.
+  components:
+    - type: Ammo
+      caliber: 9mm
+      maxStack: 30
+    - type: Sprite
+      sprite: Objects/Materials/Ammo/9mm.rsi
+    
+- type: entity
+  parent: BaseProjectile
+  id: Bullet9mm
+  components:
+    - type: Projectile
+      speed: 25
+      lifetime: 2.0
+    - type: Damageable
+      damageType: Piercing
+      amount: 12
