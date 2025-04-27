@@ -1,17 +1,17 @@
 - type: entity
-  parent: BaseWeaponRanged  # Используем существующий родительский класс из вашего мода
+  parent: BaseItem  # Гарантированно существует
   id: M4A1_Stories
   name: "M4A1 'Liberator'"
   description: "Штурмовая винтовка стандартного калибра."
   components:
-    - type: Sprite    # Графика
+    - type: Sprite
       sprite: /Textures/Weapons/Guns/Rifles/m4a1.rsi
       layers:
-        - state: icon
-    - type: Item    # Предмет
+        - state: icon   
+    - type: Item
       size: 5
       equipSound: /Audio/Items/gun_equip.ogg
-    - type: Gun    # Оружие
+    - type: Gun
       fireRate: 8
       recoil: 0.4
       projectile: Bullet556mm
@@ -19,35 +19,27 @@
       maxAmmo: 30
       spawnWithAmmo: true
       soundGunshot: /Audio/Weapons/Guns/Rifles/m4a1.ogg
-    - type: WeaponModifiable # Для модификаций используем стандартный подход вашего мода
-      slots:
-        - type: top_rail
-          name: "Top Rail"
-        - type: side_rail
-          name: "Side Rail"
 
 - type: entity
-  parent: BaseAmmoBox  # Используем ваш класс для патронов
+  parent: BaseItem
   id: Ammo556mm
   name: "5.56mm патроны"
   components:
     - type: Sprite
-      sprite: /Textures/Objects/Materials/Ammo/556mm.rsi  
+      sprite: /Textures/Objects/Materials/Ammo/556mm.rsi
+    - type: Stack
+      count: 30
+      max: 30  
     - type: Ammo
       caliber: "5.56mm"
-      amount: 30
-      maxStack: 5
     
 - type: entity
-  parent: BaseProjectile  # Используем ваш базовый класс снарядов
+  parent: BaseItem
   id: Bullet556mm
-  name: "5.56mm пуля"
   components:
     - type: Sprite
-      sprite: /Textures/Objects/Weapons/Projectiles/bullet_556mm.rsi
+      sprite: /Textures/Objects/Weapons/Projectiles/bullet_556mm.rsi  
     - type: Projectile
       speed: 35
       damage: 18
       damageType: Piercing
-    - type: Physics
-      bodyType: Dynamic
