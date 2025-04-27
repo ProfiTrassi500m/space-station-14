@@ -1,0 +1,16 @@
+- type: entity
+  id: BasicSuppressor
+  parent: BaseWeaponModule
+  name: Глушитель стандартный
+  description: Снижает шум выстрела, но уменьшает урон.
+  components:
+    - type: WeaponModuleComponent
+      moduleType: suppressor
+      noiseModifier: 0.3
+      damageModifier: 0.9
+      compatibleSlots:
+        - barrel
+    - type: Sprite
+      sprite: Objects/Weapons/Modules/suppressor.rsi
+      layers:
+        - state: suppressor

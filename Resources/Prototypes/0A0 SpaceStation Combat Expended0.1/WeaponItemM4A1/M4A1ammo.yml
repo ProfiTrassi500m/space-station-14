@@ -1,0 +1,37 @@
+- type: ammunition
+  id: Ammo556mm
+  name: патрон 5.56x45mm NATO
+  description: Стандартный промежуточный патрон NATO.
+  caliber: 5.56mm
+  projectileType: "Bullet556mm"
+  maxStack: 120
+  spawnCount: 30
+  icon: Objects/Weapons/Ammo/ammo_556.rsi
+  iconState: 556
+
+- type: projectile
+  id: Bullet556mm
+  name: пуля 5.56x45mm
+  components:
+    - type: Projectile
+      damage: 18
+      speed: 25
+      staminaDamage: 12
+      penetration: 0.4
+    - type: Sprite
+      sprite: Objects/Weapons/Ammo/bullets.rsi
+      state: 556
+
+- type: entity
+  id: Magazine556mm
+  parent: BaseItem
+  name: магазин 5.56mm (30 патронов)
+  components:
+    - type: Magazine
+      caliber: 5.56mm
+      maxAmmo: 30
+      compatibleWeapons:
+        - M4A1
+    - type: Sprite
+      sprite: Objects/Weapons/Ammo/magazines.rsi
+      state: 556_30

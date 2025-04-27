@@ -1,0 +1,15 @@
+- type: entity
+  id: RedDotSight
+  parent: BaseWeaponModule
+  name: Прицел "Красная точка"
+  description: Улучшает прицеливание на коротких дистанциях.
+  components:
+    - type: WeaponModuleComponent
+      moduleType: sight
+      accuracyModifier: 1.15
+      compatibleSlots:
+        - top_rail
+    - type: Sprite
+      sprite: Objects/Weapons/Modules/red_dot.rsi
+      layers:
+        - state: red_dot

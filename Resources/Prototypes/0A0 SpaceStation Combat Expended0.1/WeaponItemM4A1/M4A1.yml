@@ -1,0 +1,33 @@
+- type: entity
+  id: M4A1
+  parent: BaseRangedWeapon
+  name: Штурмовая винтовка M4A1
+  description: Современная модульная штурмовая винтовка под патрон 5.56x45mm NATO.
+  components:
+    - type: WeaponSlots
+      availableSlots:
+        - top_rail
+        - barrel
+        - underbarrel
+        - magazine_well
+    - type: Gun
+      caliber: 5.56mm
+      fireRate: 10
+      baseDamage: 18
+      projectileType: "Bullet556mm"
+      ammoLimit: 30
+      ammoType: "Ammo556mm"
+      spawnEmpty: false
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Rifles/m4a1.rsi
+      layers:
+        - state: m4a1_base
+        - state: m4a1_bolt  # Анимация затвора
+          visible: false
+        - state: m4a1_mag   # Отдельный слой магазина
+          visible: true
+    - type: Item
+      size: 15
+      weight: 3.2
+      slotFlags:
+        - belt
