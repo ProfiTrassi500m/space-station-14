@@ -2,51 +2,55 @@
   parent: BaseItem
   id: M4A1_RedDot
   name: "Коллиматорный прицел"
-  description: "Быстрый прицел для ближнего боя."
+  description: "+20% к точности, -5% к скорости передвижения"
   components:
-    - type: Sprite
-      sprite: /Textures/Weapons/Attachments/reddot.rsi
-    - type: WeaponAttachment
-      slotType: top_rail
-      accuracyModifier: 0.8  # +20% к точности
+    - type: WeaponModuleComponent
+      slotType: "top_rail"   
+    - type: Item
+      size: 1  
+    - type: GunModifier
+      accuracy: 1.2
+      moveSpeed: 0.95
 
 - type: entity
   parent: BaseItem
   id: M4A1_Scope4x
-  name: "Оптический прицел 4x"
-  description: "Увеличивает цель в 4 раза."
+  name: "Прицел 4x"
+  description: "Увеличение 4x, +30% точности, -10% скорости"
   components:
-    - type: Sprite
-      sprite: /Textures/Weapons/Attachments/scope4x.rsi
-    - type: WeaponAttachment
-      slotType: top_rail
-      zoomModifier: 4.0
-      accuracyModifier: 0.6  # +40% к точности
-      speedModifier: 0.9  # -10% к скорости передвижения
+    - type: WeaponModuleComponent
+      slotType: "top_rail"
+    - type: Item
+      size: 1 
+    - type: GunModifier
+      accuracy: 1.3
+      moveSpeed: 0.9
+      zoom: 4.0
 
 - type: entity
   parent: BaseItem
   id: M4A1_Suppressor
   name: "Стандартный глушитель"
-  description: "Снижает шум выстрела."
+  description: "-70% громкости, -15% урона"
   components:
-    - type: Sprite
-      sprite: /Textures/Weapons/Attachments/suppressor.rsi
-    - type: WeaponAttachment
-      slotType: muzzle
-      soundModifier: 0.3  # Уменьшает громкость на 70%
-      damageModifier: 0.85  # -15% урона
+    - type: WeaponModuleComponent
+      slotType: "muzzle"
+    - type: Item
+      size: 1 
+    - type: GunModifier
+      soundVolume: 0.3
+      damageMultiplier: 0.85
   
 - type: entity
   parent: BaseItem
   id: M4A1_TacticalSuppressor
   name: "Тактический глушитель"
-  description: "Продвинутая модель с компенсацией."
+  description: "-60% громкости, +10% контроля отдачи"
   components:
-    - type: Sprite
-      sprite: /Textures/Weapons/Attachments/tactical_suppressor.rsi
-    - type: WeaponAttachment
-      slotType: muzzle
-      soundModifier: 0.4
-      damageModifier: 0.9
-      recoilModifier: 0.8  # +20% контроля отдачи
+    - type: WeaponModuleComponent
+      slotType: "muzzle" 
+    - type: Item
+      size: 1
+    - type: GunModifier
+      soundVolume: 0.4
+      recoilMultiplier: 0.9

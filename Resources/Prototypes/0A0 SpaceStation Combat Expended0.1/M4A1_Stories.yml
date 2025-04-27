@@ -1,39 +1,40 @@
 - type: entity
   parent: BaseItem
   id: M4A1_Stories
-  name: "M4A1 Liberator"
-  description: 
+  name: "M4A1 Modular"
+  description: "Штурмовая винтовка с системой креплений."
   components:
-    - type: Sprite
-      sprite: /Textures/Weapons/Rifles/m4a1.rsi
-      layers:
-        - state: default
     - type: Item
       size: 5
-      equipSound: /Audio/Items/gunpickup.ogg
-      heldPrefix: "rifle"
+      tags:
+      - CaliberModular
+      - WeaponRifle
+      heldPrefix: "gun"
     - type: Gun
       fireRate: 10
       recoil: 0.5
       projectile: Bullet556mm
       ammoType: Ammo556mm
       maxAmmo: 30
-      spawnWithAmmo: true
       soundGunshot: /Audio/Weapons/Guns/rifle.ogg
-    - type: Physics
-      mass: 3.5
-      bodyType: Dynamic
-    - type: ParticleEmitter
-      emitter: "MuzzleFlash"
-      offset: [0.5, 0]
-    - type: WeaponAttachmentHolder
+      magazineSlot: "magazine_slot"
+    - type: Ammo
+      caliber: "5.56mm"
+      tags:
+      - Caliber556mm
+    - type: WeaponModuleHolder
       slots:
-        top_rail:
-          name: "Верхняя планка"
-          maxAttachments: 1
-        muzzle:
-          name: "Дульное крепление"
-          maxAttachments: 1
+        top_rail: {}
+        muzzle: {}
+    - type: ContainerContainer
+      containers:
+        magazine_slot: !type:Container
+          maxSize: 1
+          whitelist:
+            components:
+              - Ammo
+            tags:
+              - Caliber556mm
 
 - type: entity
   parent: BaseItem
@@ -52,15 +53,57 @@
       projectile: Bullet556mm
 
 - type: entity
-  parent: BaseItem
+  parent: BaseProjectile
   id: Bullet556mm
+  name: "5.56x45mm пуля"
+  description: "Стандартный боеприпас НАТО."
   components:
-    - type: Sprite
-      sprite: /Textures/Objects/Projectiles/bullet.rsi
-      layers:
-        - state: 556mm    
     - type: Projectile
       speed: 35
       damage: 18
       damageType: Piercing
-      deleteOnCollide: true
+      lifetime: 2.5
+    - type: Physics
+      bodyType: Dynamic
+      mass: 0.004
+    - type: Appearance
+      visuals:
+        - type: Sprite
+          sprite: /Textures/Projectiles/bullet_556mm.rsi
+          state: default
+
+- type: entity
+  parent: BaseItem
+  id: AmmoBox556mm
+  name: "Коробка 5.56мм (120 патронов)"
+  description: "Герметичная упаковка патронов."
+  components:
+    - type: AmmoProvider
+      caliber: "5.56mm"
+      amount: 120
+      packs:
+        - type: Magazine556mm
+          count: 4
+    - type: Item
+      size: 3
+    - type: Sprite
+      sprite: /Textures/Objects/Ammo/ammobox.rsi
+      layers:
+        - state: 556mm
+  
+- type: entity
+  parent: BaseItem
+  id: Magazine556mm
+  name: "Обойма 5.56мм (30 патронов)"
+  description: "Стандартный магазин для M4A1."
+  components:
+    - type: Ammo
+      caliber: "5.56mm"
+      count: 30
+      max: 30  
+    - type: Item
+      size: 2  
+    - type: Sprite
+      sprite: /Textures/Objects/Magazines/556mm.rsi
+      layers:
+        - state: full
