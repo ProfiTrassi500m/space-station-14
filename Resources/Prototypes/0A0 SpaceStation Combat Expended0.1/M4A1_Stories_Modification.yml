@@ -1,0 +1,24 @@
+# Коллиматорный прицел
+- type: entity
+  parent: BaseItem
+  id: M4A1_RedDot
+  name: "Red Dot Sight"
+  components:
+    - type: Sprite
+      sprite: Weapons/Attachments/RedDot/reddot.rsi
+    - type: Item
+      size: 1
+      
+# Тактический фонарь
+- type: entity
+  parent: BaseItem
+  id: M4A1_TacticalLight
+  name: "Tactical Flashlight"
+  components:
+    - type: Sprite
+      sprite: Weapons/Attachments/Flashlight/flashlight.rsi
+    - type: Item
+      size: 1
+    - type: PointLight
+      radius: 5
+      color: "#FFFFFF"
