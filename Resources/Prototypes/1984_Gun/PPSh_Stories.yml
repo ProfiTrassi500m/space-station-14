@@ -1,0 +1,46 @@
+- type: entity
+  parent: BaseItem  # Базовый класс для всех предметов
+  id: PPSh_Stories
+  name: "STS-9 'Stormbreaker'"
+  description: 
+  components:
+    - type: Sprite
+      sprite: Weapons/Guns/SMG/ppsh_stories.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: Weapons/Guns/SMG/ppsh_stories.rsi
+      size: 5
+      - type: Gun
+      fireRate: 12
+      recoil: 0.6
+      projectile: Bullet9mm
+      ammoType: Ammo9mm
+      maxAmmo: 30
+    - type: RangedWeapon
+      damageType: Piercing
+      damage: 10
+    # Если проект использует кастомные компоненты:
+    # - type: StoriesWeaponComponent
+    #   customParam: value
+
+- type: entity
+  parent: BaseItem  
+  id: Ammo9mm
+  name: "9mm патроны"
+  components:
+    - type: Ammo
+      caliber: 9mm
+      maxStack: 50
+    - type: Sprite
+      sprite: Objects/Materials/Ammo/9mm.rsi
+
+- type: entity
+  parent: BaseItem  # Используем BaseItem вместо BaseProjectile
+  id: Bullet9mm
+  components:
+    - type: Projectile
+      speed: 25
+    - type: Damageable
+      damageType: Piercing
+      amount: 10

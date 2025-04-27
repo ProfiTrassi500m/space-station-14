@@ -1,0 +1,49 @@
+- type: entity
+  parent: BaseItem
+  id: M4A1_RedDot
+  name: "Red Dot Sight"
+  description: "Коллиматорный прицел для быстрого прицеливания."
+  components:
+    - type: Sprite
+      sprite: Weapons/Attachments/RedDot/reddot.rsi
+    - type: Item
+      size: 1
+    - type: WeaponAttachment
+      slot: top_rail  # Совместим с верхней планкой M4A1
+      modifiers:
+        RangedWeapon:
+          accuracy: 0.8  # Улучшает точность
+
+- type: entity
+  parent: BaseItem
+  id: M4A1_TacticalLight
+  name: "Tactical Flashlight"
+  description: "Яркий фонарь для освещения целей."
+  components:
+    - type: Sprite
+      sprite: Weapons/Attachments/Flashlight/flashlight.rsi
+    - type: Item
+      size: 1
+    - type: WeaponAttachment
+      slot: side_rail  # Крепится на боковую планку
+      modifiers:
+        - type: Light  # Добавляет источник света
+          radius: 5
+          color: "#FFFFFF"
+
+- type: entity
+  parent: BaseItem
+  id: M4A1_Suppressor
+  name: "Tactical Suppressor"
+  description: "Снижает шум выстрела, но уменьшает урон."
+  components:
+    - type: Sprite
+      sprite: Weapons/Attachments/Suppressor/suppressor.rsi
+    - type: Item
+      size: 2
+    - type: WeaponAttachment
+      slot: side_rail
+      modifiers:
+        Gun:
+          soundGunshot: /Audio/Weapons/Guns/Silenced/silenced_shot.ogg
+          damageMultiplier: 0.85  # -15% урона

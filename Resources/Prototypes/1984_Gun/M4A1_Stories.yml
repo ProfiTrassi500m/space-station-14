@@ -1,0 +1,58 @@
+- type: entity
+  parent: BaseItem  # Базовый класс для предметов
+  id: M4A1_Stories
+  name: "M4A1 'Liberator'"
+  description: "Штурмовая винтовка стандартного калибра. Надёжная и точная."
+  components:
+    - type: Sprite
+      sprite: Weapons/Guns/Rifles/m4a1.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: Weapons/Guns/Rifles/m4a1.rsi
+      size: 6  # Больше, чем у ПП (длинный ствол)
+      equipSound:
+        path: /Audio/Weapons/Guns/Rifles/m4a1_equip.ogg
+    - type: Gun
+      fireRate: 8          # Ниже, чем у ПП (для баланса)
+      recoil: 0.4          # Меньшая отдача
+      projectile: Bullet556mm
+      ammoType: Ammo556mm
+      maxAmmo: 30
+      spawnWithAmmo: true
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Rifles/m4a1_fire.ogg
+    - type: RangedWeapon
+      damageType: Piercing
+      damage: 18           # Выше, чем у ПП (калибр 5.56мм)
+      effectiveRange: 7     # Дальность эффективной стрельбы
+    - type: WeaponAttachmentSlots
+      slots:
+        - id: top_rail    # Верхняя планка (для прицелов)
+          name: "Top Rail"
+        - id: side_rail   # Боковая планка (для тактических аксессуаров)
+          name: "Side Rail"
+
+- type: entity
+  parent: BaseItem
+  id: Ammo556mm
+  name: "5.56mm патроны"
+  description: "Боеприпасы для штурмовых винтовок."
+  components:
+    - type: Ammo
+      caliber: 5.56mm
+      maxStack: 60
+    - type: Sprite
+      sprite: Objects/Materials/Ammo/556mm.rsi
+    
+- type: entity
+  parent: BaseItem
+  id: Bullet556mm
+  components:
+    - type: Projectile
+      speed: 35  # Выше начальной скорости
+      lifetime: 2.5
+    - type: Damageable
+      damageType: Piercing
+      amount: 18
+  
