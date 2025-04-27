@@ -1,0 +1,33 @@
+- type: entity
+  id: AR15
+  parent: BaseRangedWeapon
+  name: Винтовка AR-15
+  description: Полуавтоматическая гражданская версия платформы M4/M16 под патрон 5.56x45mm.
+  components:
+    - type: WeaponSlots
+      availableSlots:
+        - top_rail
+        - barrel
+        - underbarrel
+        - magazine_well
+    - type: Gun
+      caliber: 5.56mm
+      fireRate: 8 # Полуавтоматический режим
+      baseDamage: 20 # Более длинный ствол = выше начальная скорость пули
+      projectileType: "Bullet556mm"
+      ammoLimit: 30
+      ammoType: "Ammo556mm"
+      spawnEmpty: true # Гражданская версия поставляется без патронов
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Rifles/ar15.rsi
+      layers:
+        - state: ar15_base
+        - state: ar15_charging_handle # Отдельный слой затворной группы
+          visible: false
+        - state: ar15_mag
+          visible: true
+    - type: Item
+      size: 15
+      weight: 3.5
+      slotFlags:
+        - belt

@@ -13,15 +13,18 @@ namespace Content.Shared.Weapons.Module
         [DataField("moduleType")]
         public string ModuleType { get; } = "generic";
 
-        // Модификаторы
-        [DataField("accuracyModifier")]
-        public float AccuracyModifier { get; } = 1.0f;
-
+        // Модификаторы характеристик
         [DataField("damageModifier")]
         public float DamageModifier { get; } = 1.0f;
-
+        
+        [DataField("fireRateModifier")]
+        public float FireRateModifier { get; } = 1.0f;
+        
         [DataField("noiseModifier")]
         public float NoiseModifier { get; } = 1.0f;
+        
+        [DataField("accuracyModifier")]
+        public float AccuracyModifier { get; } = 1.0f;
 
         // Совместимые слоты
         [DataField("compatibleSlots")]

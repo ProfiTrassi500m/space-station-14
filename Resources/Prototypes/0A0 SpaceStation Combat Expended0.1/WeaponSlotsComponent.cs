@@ -12,26 +12,45 @@ namespace Content.Shared.Weapons
         [DataField("availableSlots")]
         public Dictionary<string, SlotDefinition> AvailableSlots = new()
         {
-            ["top_rail"] = new() { Name = "Верхняя планка", MaxItems = 1 },
-            ["barrel"] = new() { Name = "Дульный слот", MaxItems = 1 },
-            ["underbarrel"] = new() { Name = "Подствольный слот", MaxItems = 1 },
-            ["magazine_well"] = new() { Name = "Приёмник магазина", MaxItems = 1 }
+            ["top_rail"] = new() { 
+                Name = "Picatinny Rail", 
+                MaxItems = 1,
+                Whitelist = new() { "sight", "optic" }
+            },
+            ["barrel"] = new() { 
+                Name = "Barrel Attachment",
+                MaxItems = 1,
+                Whitelist = new() { "suppressor", "flashhider" }
+            },
+            ["underbarrel"] = new() { 
+                Name = "Underbarrel Rail",
+                MaxItems = 1,
+                Whitelist = new() { "grip", "laser" }
+            },
+            ["magazine_well"] = new() { 
+                Name = "Magazine Well",
+                MaxItems = 1,
+                Whitelist = new() { "magazine" }
+            }
         };
 
         [ViewVariables]
-        public Dictionary<string, EntityUid> InstalledModules = new();
+        public Dictionary<string, EntityUid?> InstalledModules = new();
     }
 
     [DataDefinition]
     public sealed class SlotDefinition
     {
         [DataField("name")]
-        public string Name { get; } = string.Empty;
-
+        public string Name { get; } = "Weapon Slot";
+        
         [DataField("maxItems")]
         public int MaxItems { get; } = 1;
-
+        
         [DataField("whitelist")]
-        public List<string>? Whitelist { get; }  // Типы разрешённых модулей
+        public List<string>? Whitelist { get; }
+        
+        [DataField("blacklist")]
+        public List<string>? Blacklist { get; }
     }
 }
