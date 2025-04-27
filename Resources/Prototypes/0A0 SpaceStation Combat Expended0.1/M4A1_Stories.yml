@@ -1,69 +1,53 @@
 - type: entity
-  parent: BaseItem
+  parent: BaseWeaponRanged  # Используем существующий родительский класс из вашего мода
   id: M4A1_Stories
   name: "M4A1 'Liberator'"
   description: "Штурмовая винтовка стандартного калибра."
   components:
-    # Базовые компоненты
-    - type: Sprite
-      sprite: Weapons/Guns/Rifles/m4a1.rsi
+    - type: Sprite    # Графика
+      sprite: /Textures/Weapons/Guns/Rifles/m4a1.rsi
       layers:
         - state: icon
-        
-    - type: Item
-      sprite: Weapons/Guns/Rifles/m4a1.rsi
-      size: 6
-      equipSound:
-        path: /Audio/Weapons/Guns/Rifles/m4a1_equip.ogg
-    - type: Gun
+    - type: Item    # Предмет
+      size: 5
+      equipSound: /Audio/Items/gun_equip.ogg
+    - type: Gun    # Оружие
       fireRate: 8
       recoil: 0.4
       projectile: Bullet556mm
       ammoType: Ammo556mm
       maxAmmo: 30
       spawnWithAmmo: true
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Rifles/m4a1_fire.ogg
-    - type: Handheld
-      holdDistance: 0.8
+      soundGunshot: /Audio/Weapons/Guns/Rifles/m4a1.ogg
+    - type: WeaponModifiable # Для модификаций используем стандартный подход вашего мода
+      slots:
+        - type: top_rail
+          name: "Top Rail"
+        - type: side_rail
+          name: "Side Rail"
 
 - type: entity
-  parent: BaseItem  # Используем существующий родительский класс
+  parent: BaseAmmoBox  # Используем ваш класс для патронов
   id: Ammo556mm
   name: "5.56mm патроны"
-  description: "Боеприпасы для штурмовых винтовок."
   components:
     - type: Sprite
-      sprite: Objects/Materials/Ammo/556mm.rsi
-      layers:
-        - state: icon
-    - type: Item
-      sprite: Objects/Materials/Ammo/556mm.rsi
-      size: 1
+      sprite: /Textures/Objects/Materials/Ammo/556mm.rsi  
     - type: Ammo
       caliber: "5.56mm"
-      maxStack: 60
-      defaultProto: Bullet556mm  # Прототип снаряда по умолчанию
+      amount: 30
+      maxStack: 5
     
 - type: entity
-  parent: BaseItem  # Важно! Не BaseProjectile
+  parent: BaseProjectile  # Используем ваш базовый класс снарядов
   id: Bullet556mm
   name: "5.56mm пуля"
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Projectiles/bullet_556mm.rsi
-      layers:
-        - state: bullet
-    - type: Physics
-      shape: Circle
-      radius: 0.1
-      fixedRotation: false
+      sprite: /Textures/Objects/Weapons/Projectiles/bullet_556mm.rsi
     - type: Projectile
       speed: 35
-      lifetime: 2.5
+      damage: 18
       damageType: Piercing
-      damage: 18  # Урон
-    - type: Collidable
-      layer: Projectile
-      mask: Mob | Structure
-  
+    - type: Physics
+      bodyType: Dynamic
