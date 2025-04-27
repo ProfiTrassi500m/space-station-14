@@ -1,0 +1,52 @@
+- type: entity
+  parent: BaseItem
+  id: M4A1_RedDot
+  name: "Коллиматорный прицел"
+  description: "Быстрый прицел для ближнего боя."
+  components:
+    - type: Sprite
+      sprite: /Textures/Weapons/Attachments/reddot.rsi
+    - type: WeaponAttachment
+      slotType: top_rail
+      accuracyModifier: 0.8  # +20% к точности
+
+- type: entity
+  parent: BaseItem
+  id: M4A1_Scope4x
+  name: "Оптический прицел 4x"
+  description: "Увеличивает цель в 4 раза."
+  components:
+    - type: Sprite
+      sprite: /Textures/Weapons/Attachments/scope4x.rsi
+    - type: WeaponAttachment
+      slotType: top_rail
+      zoomModifier: 4.0
+      accuracyModifier: 0.6  # +40% к точности
+      speedModifier: 0.9  # -10% к скорости передвижения
+
+- type: entity
+  parent: BaseItem
+  id: M4A1_Suppressor
+  name: "Стандартный глушитель"
+  description: "Снижает шум выстрела."
+  components:
+    - type: Sprite
+      sprite: /Textures/Weapons/Attachments/suppressor.rsi
+    - type: WeaponAttachment
+      slotType: muzzle
+      soundModifier: 0.3  # Уменьшает громкость на 70%
+      damageModifier: 0.85  # -15% урона
+  
+- type: entity
+  parent: BaseItem
+  id: M4A1_TacticalSuppressor
+  name: "Тактический глушитель"
+  description: "Продвинутая модель с компенсацией."
+  components:
+    - type: Sprite
+      sprite: /Textures/Weapons/Attachments/tactical_suppressor.rsi
+    - type: WeaponAttachment
+      slotType: muzzle
+      soundModifier: 0.4
+      damageModifier: 0.9
+      recoilModifier: 0.8  # +20% контроля отдачи

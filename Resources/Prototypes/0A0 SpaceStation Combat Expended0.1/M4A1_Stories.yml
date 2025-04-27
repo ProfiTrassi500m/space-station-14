@@ -26,6 +26,14 @@
     - type: ParticleEmitter
       emitter: "MuzzleFlash"
       offset: [0.5, 0]
+    - type: WeaponAttachmentHolder
+      slots:
+        top_rail:
+          name: "Верхняя планка"
+          maxAttachments: 1
+        muzzle:
+          name: "Дульное крепление"
+          maxAttachments: 1
 
 - type: entity
   parent: BaseItem

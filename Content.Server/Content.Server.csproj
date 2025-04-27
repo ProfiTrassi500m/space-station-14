@@ -29,3 +29,5 @@
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 </Project>
+
+<Compile Include="Weapons\Attachments\*.cs" />
