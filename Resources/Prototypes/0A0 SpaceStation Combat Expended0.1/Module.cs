@@ -13,8 +13,8 @@ namespace Content.Server.Weapons.Module
             
             // Регистрация компонента
             RegisterComponent<WeaponModuleComponent>();
-            
-            // Регистрация системы (если она есть)
+            RegisterComponent<MagazineComponent>();  
+            RegisterComponent<WeaponSlotsComponent>();
             RegisterSystem<WeaponModuleSystem>();
         }
     }

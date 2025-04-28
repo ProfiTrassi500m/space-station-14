@@ -1,0 +1,6 @@
+- type: entity
+  id: BaseRangedWeapon
+  parent: BaseItem
+  components:
+    - type: Item
+    - type: Gun
