@@ -1,4 +1,4 @@
-- type: ammunition
+- type: ammo 
   id: Ammo556mm
   name: патрон 5.56x45mm NATO
   description: Стандартный промежуточный патрон NATO.
