@@ -1,9 +1,0 @@
-- type: entity
-  id: TacticalSuppressor
-  parent: BasicSuppressor
-  name: Глушитель тактический
-  description: Улучшенная модель с меньшим влиянием на баллистику.
-  components:
-    - type: WeaponModuleComponent
-      noiseModifier: 0.25
-      damageModifier: 0.95

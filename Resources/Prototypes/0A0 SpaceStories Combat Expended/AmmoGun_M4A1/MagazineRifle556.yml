@@ -1,0 +1,18 @@
+- type: entity
+  name: 5.56mm NATO Magazine (30 rounds)
+  parent: BaseItemMagazine
+  id: MagazineRifle556
+  description: A standard 30-round STANAG magazine for 5.56×45mm NATO.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Magazines/rifle_magazines.rsi
+      state: 556-30
+    - type: Item
+      size: 100
+    - type: Magazine
+      caliber: Rifle556
+      maxCount: 30
+      spawnAmmo:
+        - !type:CartridgeRifle556
+          count: 30
+    - type: Appearance

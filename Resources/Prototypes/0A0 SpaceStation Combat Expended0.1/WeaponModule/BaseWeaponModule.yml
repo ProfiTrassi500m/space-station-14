@@ -1,9 +1,0 @@
-- type: entity
-  id: BaseWeaponModule
-  parent: BaseItem
-  components:
-    - type: Item
-      size: 5
-      shape: smallgear
-    - type: WeaponModuleComponent
-      moduleType: generic
