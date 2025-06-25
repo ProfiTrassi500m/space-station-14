@@ -2,6 +2,8 @@
   name: Уродливое чудовище
   id: MobMonsterEnimy
   suffix: Henetik04
+  description: Оно настолько ужасно что вы хотите его убить очень быстро.
+  parent: BaseMobHuman
   components:    
   - type: MeleeChemicalInjector
     solution: melee
