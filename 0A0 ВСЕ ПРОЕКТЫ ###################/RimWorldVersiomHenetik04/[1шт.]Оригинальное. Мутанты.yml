@@ -5,29 +5,20 @@
   description: Оно настолько ужасно что вы хотите его убить очень быстро.
   parent: BaseMobHuman
   components:    
-  - type: MeleeChemicalInjector
-    solution: melee
-    transferAmount: 2.2
-    pierceArmor: false
-  - type: StaminaDamageOnHit
-    damage:
-     types:
-     Heat: 7
-     Caustic: 7 
   - type: MeleeWeapon 
     hidden: true
     autoAttack: true
     soundHit:
-      path: /Audio/Effects/bite.ogg
+     path: /Audio/Effects/bite.ogg
     angle: 1
     animation: WeaponArcBite
     damage:
-      types:
-        Blunt: 4
+     types:
+       Blunt: 4
         Piercing: 4
         Structural: 7
   - type: Sprite
-    sprite: ##########################################################
+    sprite: Mobs/Aliens/Carps/space.rsi
   - type: GhostRole
     name: Уродливое чудовище
   - type: MovementSpeedModifier
