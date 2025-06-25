@@ -1,0 +1,41 @@
+- type: entity
+  name: Уродливое чудовище
+  id: MobMonsterEnimy
+  suffix: Henetik04
+  components:    
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 2.2
+    pierceArmor: false
+  - type: StaminaDamageOnHit
+    damage:
+     types:
+     Heat: 7
+     Caustic: 7 
+  - type: MeleeWeapon 
+    hidden: true
+    autoAttack: true
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 1
+    animation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 4
+        Piercing: 4
+        Structural: 7
+  - type: Sprite
+    sprite: ##########################################################
+  - type: GhostRole
+    name: Уродливое чудовище
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4.4
+  - type: AutoImplant
+    implants: 
+    - MobMonsterEnimyJumps
+    - MobMonsterEnimyBullet
+    - MobMonsterEnimyRegen
+  - type: NightVision
+    isToggle: true
+    color: "#425f32" 
